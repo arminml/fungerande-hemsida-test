@@ -1,0 +1,52 @@
+import Image from "next/image";
+import { images } from "@/lib/images";
+import { ButtonLink } from "@/components/ui/button";
+import { Reveal } from "@/components/ui/Reveal";
+
+export function EditorialStory() {
+  return (
+    <section className="bg-stone">
+      <div className="page-pad mx-auto grid max-w-site gap-12 py-20 md:py-28 lg:grid-cols-12 lg:gap-8">
+        <Reveal className="relative lg:col-span-7">
+          <div className="relative aspect-[3/4] overflow-hidden md:aspect-[4/5]">
+            <Image
+              src={images.editorialLarge.src}
+              alt={images.editorialLarge.alt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 55vw"
+              className="object-cover"
+            />
+          </div>
+          <p className="mt-3 text-[10px] uppercase tracking-label text-mute">02 / The RAINÉE woman</p>
+        </Reveal>
+
+        <div className="relative lg:col-span-5 lg:pt-24">
+          <Reveal delay={0.1}>
+            <div className="relative mx-auto mb-10 aspect-[4/5] w-[70%] overflow-hidden lg:absolute lg:-left-16 lg:top-0 lg:w-[58%]">
+              <Image
+                src={images.editorialSmall.src}
+                alt={images.editorialSmall.alt}
+                fill
+                sizes="40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="lg:mt-[58%]">
+              <p className="label">The RAINÉE woman</p>
+              <h2 className="mt-4 font-serif text-4xl font-normal leading-[1.05] md:text-5xl">
+                For evenings without an <em className="italic">ending.</em>
+              </h2>
+              <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">
+                RAINÉE was created around a simple idea: the pieces we carry should feel as considered as
+                the moments we dress for. Each design balances timeless silhouettes with modern femininity.
+              </p>
+              <ButtonLink href="/our-story" variant="line" arrow className="mt-8">
+                Our story
+              </ButtonLink>
+            </div>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
