@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 const leftNav = [
   { href: "/shop", label: "Butik" },
   { href: "/collections/evening", label: "Kollektioner" },
-  { href: "/our-story", label: "Om oss" },
+  { href: "/our-story", label: "Om RAINÉE UF" },
 ];
 
 export function Header() {
