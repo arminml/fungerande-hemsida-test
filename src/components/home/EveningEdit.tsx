@@ -15,14 +15,14 @@ export function EveningEdit() {
       <div className="absolute inset-0 bg-espresso/50" />
       <div className="page-pad relative mx-auto flex min-h-[70vh] max-w-site items-center">
         <div className="max-w-lg text-ivory">
-          <p className="text-[11px] uppercase tracking-label text-champagne">Evening edit</p>
-          <h2 className="mt-4 font-serif text-5xl font-normal md:text-6xl">After dark.</h2>
+          <p className="text-[11px] uppercase tracking-label text-champagne">Kvällens urval</p>
+          <h2 className="mt-4 font-serif text-5xl font-normal md:text-6xl">Efter mörker.</h2>
           <p className="mt-6 text-[15px] leading-relaxed text-ivory/80">
-            Pieces designed for dinners that become drinks,
-            <br className="hidden sm:block" /> and drinks that become stories.
+            Väskor formgivna för middagar som blir drinkar,
+            <br className="hidden sm:block" /> och drinkar som blir berättelser.
           </p>
           <ButtonLink href="/collections/evening" className="mt-10 bg-ivory text-espresso hover:bg-stone">
-            Shop the edit
+            Handla urvalet
           </ButtonLink>
         </div>
       </div>

@@ -3,18 +3,18 @@ import { Reveal } from "@/components/ui/Reveal";
 const pillars = [
   {
     n: "01",
-    title: "Timeless design",
-    copy: "Pieces that transcend seasons.",
+    title: "Tidlös design",
+    copy: "Modeller som överlever säsongerna.",
   },
   {
     n: "02",
-    title: "Considered details",
-    copy: "Every element has a reason.",
+    title: "Övervägda detaljer",
+    copy: "Varje element har en anledning.",
   },
   {
     n: "03",
-    title: "Made for occasions",
-    copy: "From dinner reservations to midnight.",
+    title: "Skapade för tillfällen",
+    copy: "Från bordsbokning till midnatt.",
   },
 ];
 
@@ -23,11 +23,11 @@ export function BrandPhilosophy() {
     <section className="page-pad mx-auto max-w-site py-24 text-center md:py-32">
       <Reveal>
         <div className="gold-rule mx-auto" />
-        <h2 className="mt-8 font-serif text-4xl font-normal md:text-5xl">Designed to be kept.</h2>
+        <h2 className="mt-8 font-serif text-4xl font-normal md:text-5xl">Formgiven att behållas.</h2>
         <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-mute">
-          Thoughtful silhouettes. Considered details.
+          Genomtänkta silhuetter. Övervägda detaljer.
           <br />
-          Made for this evening — and the next.
+          Skapade för den här kvällen — och nästa.
         </p>
       </Reveal>
       <div className="mt-16 grid gap-10 md:grid-cols-3 md:gap-0">

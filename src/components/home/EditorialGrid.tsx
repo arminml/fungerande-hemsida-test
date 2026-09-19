@@ -11,11 +11,11 @@ export function EditorialGrid() {
         <Reveal>
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="label">The world of RAINÉE</p>
+              <p className="label">RAINÉES värld</p>
               <p className="mt-2 font-serif text-3xl italic">Paris, 22:14</p>
             </div>
             <p className="hidden text-[10px] uppercase tracking-label text-mute sm:block">
-              Collection 01 · Mood
+              Kollektion 01 · Stämning
             </p>
           </div>
         </Reveal>

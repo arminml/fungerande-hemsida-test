@@ -29,7 +29,7 @@ export function ProductInfo({ product }: { product: Product }) {
       </div>
 
       <div className="mt-8">
-        <p className="mb-3 text-[11px] uppercase tracking-label text-mute">Quantity</p>
+        <p className="mb-3 text-[11px] uppercase tracking-label text-mute">Antal</p>
         <QuantitySelector value={quantity} onChange={setQuantity} />
       </div>
 
@@ -38,30 +38,30 @@ export function ProductInfo({ product }: { product: Product }) {
           className="w-full"
           onClick={() => {
             addItem(product.slug, color, quantity);
-            toast("Added to bag", { description: product.name });
+            toast("Tillagd i väskan", { description: product.name });
           }}
         >
-          Add to bag
+          Lägg i väskan
         </Button>
         <Button
           variant="ghost"
           className="w-full"
           onClick={() => {
             addItem(product.slug, color, quantity);
-            toast("Ready for checkout", { description: "Placeholder checkout." });
+            toast("Redo för kassan", { description: "Platshållare för kassa." });
           }}
         >
-          Buy it now
+          Köp nu
         </Button>
       </div>
 
       <Accordion type="single" collapsible className="mt-10">
         <AccordionItem value="description">
-          <AccordionTrigger>Description</AccordionTrigger>
+          <AccordionTrigger>Beskrivning</AccordionTrigger>
           <AccordionContent>{product.longDescription}</AccordionContent>
         </AccordionItem>
         <AccordionItem value="details">
-          <AccordionTrigger>Details</AccordionTrigger>
+          <AccordionTrigger>Detaljer</AccordionTrigger>
           <AccordionContent>
             <ul className="space-y-2">
               {product.details.map((detail) => (
@@ -71,14 +71,14 @@ export function ProductInfo({ product }: { product: Product }) {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="materials">
-          <AccordionTrigger>Materials & Care</AccordionTrigger>
+          <AccordionTrigger>Material & skötsel</AccordionTrigger>
           <AccordionContent>{product.materials}</AccordionContent>
         </AccordionItem>
         <AccordionItem value="shipping">
-          <AccordionTrigger>Shipping & Returns</AccordionTrigger>
+          <AccordionTrigger>Frakt & returer</AccordionTrigger>
           <AccordionContent>
-            Complimentary shipping on orders over 1 500 SEK. Returns accepted within 14 days, unworn
-            and in original condition. Placeholder policy copy.
+            Fri frakt på beställningar över 1 500 SEK. Returer accepteras inom 14 dagar, oanvända
+            och i ursprungligt skick. Platshållartext för villkor.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

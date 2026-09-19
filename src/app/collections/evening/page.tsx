@@ -4,8 +4,8 @@ import { images } from "@/lib/images";
 import { ProductGrid } from "@/components/product/ProductGrid";
 
 export const metadata = {
-  title: "After Dark",
-  description: "A collection for candlelit tables, late reservations and the hours that follow.",
+  title: "Efter mörker",
+  description: "En kollektion för ljusstakebord, sena reservationer och timmarna som följer.",
 };
 
 export default function EveningCollectionPage() {
@@ -25,10 +25,10 @@ export default function EveningCollectionPage() {
         <div className="absolute inset-0 bg-espresso/55" />
         <div className="page-pad relative mx-auto flex min-h-[62vh] max-w-site items-end pb-14">
           <div className="max-w-xl text-ivory">
-            <p className="text-[11px] uppercase tracking-label text-champagne">RAINÉE edit</p>
-            <h1 className="mt-4 font-serif text-5xl font-normal md:text-6xl">After Dark</h1>
+            <p className="text-[11px] uppercase tracking-label text-champagne">RAINÉE-urval</p>
+            <h1 className="mt-4 font-serif text-5xl font-normal md:text-6xl">Efter mörker</h1>
             <p className="mt-5 text-[15px] leading-relaxed text-ivory/80">
-              A collection for candlelit tables, late reservations and the hours that follow.
+              En kollektion för ljusstakebord, sena reservationer och timmarna som följer.
             </p>
           </div>
         </div>

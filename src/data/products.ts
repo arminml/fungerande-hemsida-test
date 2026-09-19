@@ -22,13 +22,13 @@ export type Product = {
   image: string;
   hoverImage: string;
   gallery: string[];
-  badge?: "New" | "Bestseller";
+  badge?: "Nyhet" | "Bästsäljare";
 };
 
 export const colors: Record<string, ProductColor> = {
   espresso: { id: "espresso", name: "Espresso", hex: "#3A2C24" },
   ivory: { id: "ivory", name: "Ivory", hex: "#E8E0D4" },
-  black: { id: "black", name: "Black", hex: "#161412" },
+  black: { id: "black", name: "Svart", hex: "#161412" },
   champagne: { id: "champagne", name: "Champagne", hex: "#D7C89A" },
 };
 
@@ -38,39 +38,41 @@ export const products: Product[] = [
     name: "The Amélie",
     price: 1495,
     description:
-      "A sculptural evening clutch designed around a clean silhouette and understated details.",
+      "En skulptural kuvertväska byggd kring en ren silhuett och återhållna detaljer.",
     longDescription:
-      "The Amélie is RAINÉE’s signature form — a compact clutch with a quiet curve, a discreet clasp, and a presence that does not announce itself. It is meant to be held, set down, and carried again through a long evening.",
+      "The Amélie är RAINÉES signaturform — en kompakt kuvertväska med en stillsam kurva, ett diskret spänne och en närvaro som inte behöver höja rösten. Den är till för att hållas, ställas ner och bäras vidare genom en lång kväll.",
     details: [
-      "Structured clutch with hidden magnetic closure",
-      "Interior slip pocket",
-      "Optional chain strap, 48 cm drop",
-      "Dimensions: 22 × 13 × 5 cm",
+      "Strukturerad kuvertväska med dold magnetstängning",
+      "Inre slip-ficka",
+      "Valfri kedjerem, 48 cm fall",
+      "Mått: 22 × 13 × 5 cm",
     ],
-    materials: "Smooth calf leather. Cotton lining. Brass hardware with a muted finish. Wipe with a soft dry cloth. Keep away from moisture and direct sun.",
+    materials:
+      "Slätt kalvskinn. Bomullsfoder. Mässing med dämpad finish. Torka med en mjuk, torr trasa. Skydda mot fukt och direkt sol.",
     colors: [colors.espresso, colors.ivory, colors.black],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "signature"],
     image: images.bags.amelie,
     hoverImage: images.bags.amelieAlt,
     gallery: [images.bags.amelie, images.bags.amelieAlt, images.editorialSmall.src, images.mood[5].src],
-    badge: "Bestseller",
+    badge: "Bästsäljare",
   },
   {
     slug: "the-camille",
     name: "The Camille",
     price: 1695,
     description:
-      "A slightly elongated clutch with a folded flap — made for dinners that refuse to end.",
+      "En något förlängd kuvertväska med vikt klaff — gjord för middagar som vägrar ta slut.",
     longDescription:
-      "The Camille takes its line from an envelope: a folded flap, a slim profile, and just enough volume for the evening’s essentials. It sits close to the body and reads as an accessory, not an object of display.",
+      "The Camille tar sin linje från ett kuvert: en vikt klaff, en smal profil och precis tillräcklig volym för kvällens nödvändigheter. Den sitter nära kroppen och läses som ett accessoar, inte som ett utställningsföremål.",
     details: [
-      "Envelope silhouette with fold-over flap",
-      "Interior card slot",
-      "Detachable leather strap",
-      "Dimensions: 25 × 14 × 4 cm",
+      "Kuvertsilhuett med överviktsklaff",
+      "Inre kortfack",
+      "Avtagbar läderrem",
+      "Mått: 25 × 14 × 4 cm",
     ],
-    materials: "Grained calf leather. Sueded lining. Tonal stitching. Store in the included dust bag.",
+    materials:
+      "Graverat kalvskinn. Mockafoder. Tonal söm. Förvara i den medföljande dustbagen.",
     colors: [colors.ivory, colors.espresso, colors.champagne],
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
@@ -83,16 +85,17 @@ export const products: Product[] = [
     name: "The Éloise",
     price: 1595,
     description:
-      "A compact frame clutch with a vintage echo and a thoroughly modern restraint.",
+      "En kompakt ramväska med ett vintage-eko och en genomgående modern återhållsamhet.",
     longDescription:
-      "The Éloise recalls the frame bags of mid-century evenings, stripped of ornament. The metal frame is narrow, the leather is quiet, and the scale is precise — enough, never more.",
+      "The Éloise påminner om ramväskorna från femtiotalets kvällar, men utan ornament. Metallramen är smal, lädret är tyst och skalan är precis — tillräckligt, aldrig mer.",
     details: [
-      "Kiss-lock frame closure",
-      "Single interior compartment",
-      "Short chain handle",
-      "Dimensions: 20 × 12 × 6 cm",
+      "Kiss-lock-ram",
+      "Ett inre fack",
+      "Kort kedjehandtag",
+      "Mått: 20 × 12 × 6 cm",
     ],
-    materials: "Polished calf. Cotton twill lining. Aged brass frame. Avoid contact with perfume and alcohol-based products.",
+    materials:
+      "Polerat kalvskinn. Bomullstwillfoder. Åldrad mässingsram. Undvik kontakt med parfym och alkoholbaserade produkter.",
     colors: [colors.black, colors.espresso, colors.ivory],
     defaultColor: "black",
     categories: ["clutches", "evening", "signature"],
@@ -105,62 +108,65 @@ export const products: Product[] = [
     name: "The Margaux",
     price: 1795,
     description:
-      "A softly structured pouch with a gathered opening and a longer, quieter line.",
+      "En mjukt strukturerad pouch med samlad öppning och en längre, tystare linje.",
     longDescription:
-      "The Margaux is gathered, not slouchy. Its volume is controlled, its opening concealed, and its surface left uninterrupted. It is the piece for nights when the dress is already doing the talking.",
+      "The Margaux är samlad, inte sladdrig. Volymen är kontrollerad, öppningen dold och ytan lämnad ostörd. Det är väskan för nätter när klänningen redan talar.",
     details: [
-      "Soft-structured pouch",
-      "Concealed zip with leather pull",
-      "Interior zip pocket",
-      "Dimensions: 24 × 15 × 7 cm",
+      "Mjukt strukturerad pouch",
+      "Dold dragkedja med läderdrag",
+      "Inre dragkedjeficka",
+      "Mått: 24 × 15 × 7 cm",
     ],
-    materials: "Nappa leather. Silk-blend lining. Keep stuffed when not in use to retain shape.",
+    materials:
+      "Nappaläder. Sidenblandat foder. Håll den fylld när den inte används för att behålla formen.",
     colors: [colors.espresso, colors.black, colors.champagne],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "new"],
     image: images.bags.margaux,
     hoverImage: images.bags.margauxAlt,
     gallery: [images.bags.margaux, images.bags.margauxAlt, images.mood[3].src, images.bags.camille],
-    badge: "New",
+    badge: "Nyhet",
   },
   {
     slug: "the-celeste",
     name: "The Céleste",
     price: 1895,
     description:
-      "A slender minaudière with a champagne face and almost no hardware to spare.",
+      "En slank minaudière med champagneyta och nästan ingen hårdvara att avvara.",
     longDescription:
-      "The Céleste is the most formal of the collection — a hard case softened by colour, meant for black-tie rooms and late reservations. It holds little, and that is the point.",
+      "The Céleste är kollektionens mest formella modell — ett hårt etui mjukat av färg, tänkt för black-tie-rum och sena reservationer. Den rymmer lite, och det är poängen.",
     details: [
-      "Rigid minaudière construction",
-      "Push-lock closure",
-      "Mirror card inside lid",
-      "Dimensions: 18 × 11 × 5 cm",
+      "Styv minaudière-konstruktion",
+      "Trycklås",
+      "Spegelkort i locket",
+      "Mått: 18 × 11 × 5 cm",
     ],
-    materials: "Leather-wrapped case. Satin interior. Light champagne hardware. Store separately from darker leathers.",
+    materials:
+      "Läderklätt etui. Satinfoder. Ljus champagnehårdvara. Förvara separat från mörkare läder.",
     colors: [colors.champagne, colors.ivory, colors.black],
     defaultColor: "champagne",
     categories: ["clutches", "evening", "signature", "new"],
     image: images.bags.celeste,
     hoverImage: images.bags.celesteAlt,
     gallery: [images.bags.celeste, images.bags.celesteAlt, images.storyDetail.src, images.mood[2].src],
-    badge: "New",
+    badge: "Nyhet",
   },
   {
     slug: "the-noemie",
     name: "The Noémie",
     price: 1595,
     description:
-      "A rectangular clutch with a single seam and a matte, almost architectural face.",
+      "En rektangulär kuvertväska med en enda söm och en matt, nästan arkitektonisk yta.",
     longDescription:
-      "The Noémie is geometry, not decoration. Four planes, one seam, a recessed clasp. It photographs well because it does so little.",
+      "The Noémie är geometri, inte dekoration. Fyra plan, en söm, ett nedsänkt spänne. Den fotograferas väl just för att den gör så lite.",
     details: [
-      "Box clutch with recessed clasp",
-      "Divided interior",
-      "Optional wrist strap",
-      "Dimensions: 23 × 13 × 5 cm",
+      "Boxclutch med nedsänkt spänne",
+      "Delat innerfack",
+      "Valfri handledsrem",
+      "Mått: 23 × 13 × 5 cm",
     ],
-    materials: "Matte calf. Unlined leather interior. Condition occasionally with a colourless cream.",
+    materials:
+      "Matt kalvskinn. Ofodrat läderinner. Konditionera ibland med en färglös kräm.",
     colors: [colors.black, colors.ivory, colors.espresso],
     defaultColor: "black",
     categories: ["clutches", "evening"],
@@ -173,39 +179,40 @@ export const products: Product[] = [
     name: "The Isabelle",
     price: 1745,
     description:
-      "A draped clutch that gathers at the side — the collection’s most feminine line.",
+      "En draperad kuvertväska som samlas vid sidan — kollektionens mest feminina linje.",
     longDescription:
-      "The Isabelle is gathered at one side like fabric. The drape is set, not accidental, and the leather is chosen for how it takes light rather than how it shines.",
+      "The Isabelle är samlad på ena sidan som tyg. Draperingen är satt, inte slumpmässig, och lädret är valt för hur det tar ljus snarare än hur det glänser.",
     details: [
-      "Asymmetric drape",
-      "Side clasp",
-      "Interior slip pocket",
-      "Dimensions: 26 × 14 × 6 cm",
+      "Asymmetrisk drapering",
+      "Sidospänne",
+      "Inre slip-ficka",
+      "Mått: 26 × 14 × 6 cm",
     ],
-    materials: "Supple nappa. Cotton lining. Avoid overfilling to preserve the drape.",
+    materials:
+      "Mjuk nappa. Bomullsfoder. Undvik att överfylla för att bevara draperingen.",
     colors: [colors.ivory, colors.champagne, colors.espresso],
     defaultColor: "ivory",
     categories: ["clutches", "evening", "new"],
     image: images.bags.isabelle,
     hoverImage: images.bags.isabelleAlt,
     gallery: [images.bags.isabelle, images.bags.isabelleAlt, images.editorialLarge.src, images.bags.margaux],
-    badge: "New",
+    badge: "Nyhet",
   },
   {
     slug: "the-juliette",
     name: "The Juliette",
     price: 1645,
     description:
-      "A compact oval clutch with a vintage curve and a contemporary, unadorned face.",
+      "En kompakt oval kuvertväska med en vintagelinje och ett samtida, odekorerat ansikte.",
     longDescription:
-      "The Juliette is an oval — a shape that sits comfortably in the hand and looks considered on a table. No logo, no hardware beyond a slim catch.",
+      "The Juliette är en oval — en form som vilar bekvämt i handen och ser övervägd ut på ett bord. Ingen logotyp, ingen hårdvara utöver ett smalt lås.",
     details: [
-      "Oval silhouette",
-      "Slim catch closure",
-      "Fits a compact phone",
-      "Dimensions: 21 × 12 × 5 cm",
+      "Oval silhuett",
+      "Smal låsstängning",
+      "Rymmer en kompakt telefon",
+      "Mått: 21 × 12 × 5 cm",
     ],
-    materials: "Smooth calf. Suede lining. Wipe after wear. Rest in dust bag.",
+    materials: "Slätt kalvskinn. Mockafoder. Torka av efter användning. Vila i dustbag.",
     colors: [colors.espresso, colors.black, colors.ivory],
     defaultColor: "espresso",
     categories: ["clutches", "signature"],
@@ -218,39 +225,39 @@ export const products: Product[] = [
     name: "The Solène",
     price: 1845,
     description:
-      "A taller evening bag with a slender handle — for when a clutch wants a little more presence.",
+      "En högre kvällsväska med ett smalt handtag — för när en clutch vill ha lite mer närvaro.",
     longDescription:
-      "The Solène stands slightly taller than the rest of the collection. A slender top handle makes it possible to carry by the fingers, or to set it upright beside a glass.",
+      "The Solène står något högre än resten av kollektionen. Ett smalt topphandtag gör det möjligt att bära den i fingrarna, eller att ställa den upprätt bredvid ett glas.",
     details: [
-      "Top-handle evening bag",
-      "Magnetic flap",
-      "Interior zip pocket",
-      "Dimensions: 20 × 16 × 6 cm",
+      "Kvällsväska med topphandtag",
+      "Magnetklaff",
+      "Inre dragkedjeficka",
+      "Mått: 20 × 16 × 6 cm",
     ],
-    materials: "Structured calf. Cotton lining. Handle is leather-wrapped.",
+    materials: "Strukturerat kalvskinn. Bomullsfoder. Handtaget är läderlindat.",
     colors: [colors.black, colors.espresso, colors.champagne],
     defaultColor: "black",
     categories: ["evening", "signature"],
     image: images.bags.solene,
     hoverImage: images.bags.soleneAlt,
     gallery: [images.bags.solene, images.bags.soleneAlt, images.eveningEdit.src, images.bags.noemie],
-    badge: "Bestseller",
+    badge: "Bästsäljare",
   },
   {
     slug: "the-adele",
     name: "The Adèle",
     price: 1545,
     description:
-      "A small square clutch with a single plane of leather and a recessed gold catch.",
+      "En liten kvadratisk kuvertväska med ett enda plan av läder och ett nedsänkt guldspänne.",
     longDescription:
-      "The Adèle is almost a square. Its only ornament is a recessed catch in muted champagne — a detail meant to be found, not seen from across the room.",
+      "The Adèle är nästan en kvadrat. Dess enda ornament är ett nedsänkt spänne i dämpad champagne — en detalj som ska hittas, inte synas från andra sidan rummet.",
     details: [
-      "Square clutch",
-      "Recessed catch",
-      "Fits cards and a slim phone",
-      "Dimensions: 18 × 18 × 4 cm",
+      "Kvadratisk kuvertväska",
+      "Nedsänkt spänne",
+      "Rymmer kort och en smal telefon",
+      "Mått: 18 × 18 × 4 cm",
     ],
-    materials: "Calf leather. Satin lining. Hardware in light champagne.",
+    materials: "Kalvskinn. Satinfoder. Hårdvara i ljus champagne.",
     colors: [colors.ivory, colors.espresso, colors.black],
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
@@ -259,6 +266,17 @@ export const products: Product[] = [
     gallery: [images.bags.adele, images.bags.adeleAlt, images.mood[4].src, images.bags.celeste],
   },
 ];
+
+const searchAliases: Record<string, ProductCategory[]> = {
+  kuvert: ["clutches"],
+  kuvertväska: ["clutches"],
+  kuvertväskor: ["clutches"],
+  kväll: ["evening"],
+  kvälls: ["evening"],
+  signatur: ["signature"],
+  nyhet: ["new"],
+  nyheter: ["new"],
+};
 
 export function getProduct(slug: string) {
   return products.find((product) => product.slug === slug);
@@ -280,10 +298,13 @@ export function filterProducts(category: "all" | ProductCategory) {
 export function searchProducts(query: string) {
   const q = query.trim().toLowerCase();
   if (!q) return [];
+  const aliased = Object.entries(searchAliases).flatMap(([term, cats]) =>
+    q.includes(term) ? cats : [],
+  );
   return products.filter(
     (product) =>
       product.name.toLowerCase().includes(q) ||
       product.description.toLowerCase().includes(q) ||
-      product.categories.some((category) => category.includes(q)),
+      product.categories.some((category) => category.includes(q) || aliased.includes(category)),
   );
 }

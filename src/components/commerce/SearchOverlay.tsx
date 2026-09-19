@@ -7,7 +7,7 @@ import { searchProducts } from "@/data/products";
 import { ProductCard } from "@/components/product/ProductCard";
 import { useCart } from "@/components/providers/CartProvider";
 
-const popular = ["Clutches", "Evening", "The Amélie", "New Arrivals"];
+const popular = ["Kuvertväskor", "Kväll", "The Amélie", "Nyheter"];
 
 export function SearchOverlay() {
   const { searchOpen, setSearchOpen } = useCart();
@@ -30,11 +30,11 @@ export function SearchOverlay() {
   if (!searchOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-ivory/97 backdrop-blur-[6px]" role="dialog" aria-modal="true" aria-label="Search RAINÉE">
+    <div className="fixed inset-0 z-50 bg-ivory/97 backdrop-blur-[6px]" role="dialog" aria-modal="true" aria-label="Sök RAINÉE">
       <div className="page-pad mx-auto max-w-site pt-8">
         <div className="flex items-center justify-between">
-          <p className="label">Search</p>
-          <button type="button" className="focus-ring" aria-label="Close search" onClick={() => setSearchOpen(false)}>
+          <p className="label">Sök</p>
+          <button type="button" className="focus-ring" aria-label="Stäng sök" onClick={() => setSearchOpen(false)}>
             <X className="h-5 w-5" />
           </button>
         </div>
@@ -42,12 +42,12 @@ export function SearchOverlay() {
           autoFocus
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search RAINÉE"
+          placeholder="Sök RAINÉE"
           className="mt-10 w-full border-b border-line bg-transparent pb-4 font-serif text-4xl text-espresso outline-none placeholder:text-mute/50 md:text-6xl"
         />
 
         <div className="mt-10">
-          <p className="text-[11px] uppercase tracking-label text-mute">Popular searches</p>
+          <p className="text-[11px] uppercase tracking-label text-mute">Populära sökningar</p>
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3">
             {popular.map((term) => (
               <button
@@ -72,7 +72,7 @@ export function SearchOverlay() {
         {query ? (
           <div className="mt-12">
             {results.length === 0 ? (
-              <p className="text-mute">No pieces found.</p>
+              <p className="text-mute">Inga modeller hittades.</p>
             ) : (
               <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
                 {results.map((product) => (

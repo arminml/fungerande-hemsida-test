@@ -17,10 +17,10 @@ export function ColorSelector({
   return (
     <div>
       <div className="mb-3 flex items-baseline justify-between">
-        <p className="text-[11px] uppercase tracking-label text-mute">Colour</p>
+        <p className="text-[11px] uppercase tracking-label text-mute">Färg</p>
         <p className="text-[12px] uppercase tracking-nav text-espresso">{selected?.name}</p>
       </div>
-      <div className="flex gap-3" role="listbox" aria-label="Colour">
+      <div className="flex gap-3" role="listbox" aria-label="Färg">
         {colors.map((color) => (
           <button
             key={color.id}

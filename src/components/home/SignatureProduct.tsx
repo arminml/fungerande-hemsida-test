@@ -21,10 +21,10 @@ export function SignatureProduct() {
     <section className="page-pad mx-auto grid max-w-site items-center gap-12 py-20 md:py-28 lg:grid-cols-2 lg:gap-20">
       <div className="relative aspect-[4/5] overflow-hidden bg-stone">
         <Image src={product.image} alt={product.name} fill className="object-cover" sizes="50vw" />
-        <span className="absolute left-4 top-4 text-[10px] uppercase tracking-label text-ivory">01 / Signature</span>
+        <span className="absolute left-4 top-4 text-[10px] uppercase tracking-label text-ivory">01 / Signatur</span>
       </div>
       <div>
-        <p className="label">The signature</p>
+        <p className="label">Signaturen</p>
         <h2 className="mt-3 font-serif text-5xl font-normal">{product.name}</h2>
         <p className="mt-3 text-sm text-mute">{formatSek(product.price)}</p>
         <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">{product.description}</p>
@@ -35,14 +35,14 @@ export function SignatureProduct() {
           className="mt-8"
           onClick={() => {
             addItem(product.slug, color);
-            toast("Added to bag", { description: product.name });
+            toast("Tillagd i väskan", { description: product.name });
           }}
         >
-          Add to bag
+          Lägg i väskan
         </Button>
         <Accordion type="single" collapsible className="mt-10 max-w-md">
           <AccordionItem value="details">
-            <AccordionTrigger>Details</AccordionTrigger>
+            <AccordionTrigger>Detaljer</AccordionTrigger>
             <AccordionContent>
               <ul className="space-y-2">
                 {product.details.map((detail) => (
@@ -52,13 +52,13 @@ export function SignatureProduct() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="materials">
-            <AccordionTrigger>Materials & Care</AccordionTrigger>
+            <AccordionTrigger>Material & skötsel</AccordionTrigger>
             <AccordionContent>{product.materials}</AccordionContent>
           </AccordionItem>
           <AccordionItem value="shipping">
-            <AccordionTrigger>Shipping & Returns</AccordionTrigger>
+            <AccordionTrigger>Frakt & returer</AccordionTrigger>
             <AccordionContent>
-              Complimentary shipping on orders over 1 500 SEK. Returns within 14 days.
+              Fri frakt på beställningar över 1 500 SEK. Returer inom 14 dagar.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

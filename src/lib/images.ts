@@ -4,80 +4,80 @@
  */
 export const images = {
   hero: {
-    src: "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg",
-    alt: "Woman in a long coat walking a quiet European street at dusk",
+    src: "/images/pexels-malcolm-garret-3023588-11681818%20(2).jpg",
+    alt: "RAINÉE clutch campaign",
   },
   editorialLarge: {
     src: "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg",
-    alt: "Editorial portrait in a cream knit against a muted interior",
+    alt: "Editoriell porträttbild i creamfärgad stickad tröja mot en dämpad interiör",
   },
   editorialSmall: {
     src: "https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg",
-    alt: "Café table with espresso and a newspaper in warm light",
+    alt: "Kafébord med espresso och en tidning i varmt ljus",
   },
   eveningEdit: {
     src: "https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg",
-    alt: "Candlelit restaurant interior with dark wood and low light",
+    alt: "Restauranginteriör i stearinljus med mörkt trä och låg belysning",
   },
   storyHero: {
     src: "https://images.pexels.com/photos/972995/pexels-photo-972995.jpeg",
-    alt: "Woman in a tailored coat standing before pale stone architecture",
+    alt: "Kvinna i skräddad kappa framför blek stenarkitektur",
   },
   storyArchitecture: {
     src: "https://images.pexels.com/photos/2563681/pexels-photo-2563681.jpeg",
-    alt: "Warm stone courtyard of a European building",
+    alt: "Varm steninnergård i en europeisk byggnad",
   },
   storyDetail: {
     src: "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg",
-    alt: "Close-up of gold jewelry on a cream surface",
+    alt: "Närbild av guldsmycken på en creamfärgad yta",
   },
   storyStreet: {
     src: "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg",
-    alt: "Quiet Parisian street with Haussmann architecture",
+    alt: "Stilla parisergränd med haussmannarkitektur",
   },
   storyCafe: {
     src: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
-    alt: "Hands holding a ceramic espresso cup",
+    alt: "Händer som håller en keramisk espressokopp",
   },
   mood: [
     {
       src: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg",
-      alt: "Paris rooftops in muted autumn light",
+      alt: "Paristak i dämpat höstljus",
       caption: "01 / Haussmann",
     },
     {
       src: "https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg",
-      alt: "Café interior with marble tables and brass details",
-      caption: "02 / Café",
+      alt: "Kaféinteriör med marmorbord och mässingsdetaljer",
+      caption: "02 / Kafé",
     },
     {
       src: "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg",
-      alt: "Minimal gold jewelry on a linen cloth",
-      caption: "03 / Detail",
+      alt: "Minimala guldsmycken på linne",
+      caption: "03 / Detalj",
     },
     {
       src: "https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg",
-      alt: "Neutral tailored clothing on a city street",
-      caption: "04 / Cloth",
+      alt: "Neutral skräddad klädsel på en stadsgata",
+      caption: "04 / Tyg",
     },
     {
       src: "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg",
-      alt: "Ornate European doorway in cream stone",
-      caption: "05 / Threshold",
+      alt: "Ornamenterad europeisk port i creamsten",
+      caption: "05 / Tröskel",
     },
     {
       src: "https://images.pexels.com/photos/6044266/pexels-photo-6044266.jpeg",
-      alt: "Close-up of brown leather grain and stitching",
-      caption: "06 / Leather",
+      alt: "Närbild av brunt läder och sömmar",
+      caption: "06 / Läder",
     },
     {
       src: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
-      alt: "Evening dining table with low candlelight",
-      caption: "07 / After dark",
+      alt: "Kvällsbord med lågt stearinljus",
+      caption: "07 / Efter mörker",
     },
     {
       src: "https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg",
-      alt: "Warm dusk over a Paris avenue",
+      alt: "Varm skymning över en parisisk aveny",
       caption: "08 / 22:14",
     },
   ],

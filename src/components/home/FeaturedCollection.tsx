@@ -10,11 +10,11 @@ export function FeaturedCollection() {
       <Reveal>
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="label">The collection</p>
-            <h2 className="mt-3 font-serif text-4xl font-normal md:text-5xl">Objects of desire.</h2>
+            <p className="label">Kollektionen</p>
+            <h2 className="mt-3 font-serif text-4xl font-normal md:text-5xl">Objekt att åtrå.</h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-mute">
-            Designed to be carried long after the evening ends.
+            Formgivna att bäras långt efter att kvällen är slut.
           </p>
         </div>
       </Reveal>

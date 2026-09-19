@@ -2,35 +2,35 @@ import Link from "next/link";
 
 const columns = [
   {
-    title: "Shop",
+    title: "Butik",
     links: [
-      { href: "/shop", label: "New Arrivals" },
-      { href: "/shop", label: "Clutches" },
-      { href: "/shop", label: "Best Sellers" },
-      { href: "/collections/evening", label: "Collections" },
+      { href: "/shop", label: "Nyheter" },
+      { href: "/shop", label: "Kuvertväskor" },
+      { href: "/shop", label: "Bästsäljare" },
+      { href: "/collections/evening", label: "Kollektioner" },
     ],
   },
   {
     title: "RAINÉE",
     links: [
-      { href: "/our-story", label: "Our Story" },
+      { href: "/our-story", label: "Vår historia" },
       { href: "/our-story", label: "Journal" },
-      { href: "/our-story", label: "Materials" },
-      { href: "/our-story", label: "Contact" },
+      { href: "/our-story", label: "Material" },
+      { href: "/our-story", label: "Kontakt" },
     ],
   },
   {
-    title: "Client Services",
+    title: "Kundservice",
     links: [
-      { href: "/shop", label: "Shipping & Returns" },
-      { href: "/shop", label: "FAQ" },
-      { href: "/our-story", label: "Care Guide" },
-      { href: "/shop", label: "Terms" },
-      { href: "/shop", label: "Privacy" },
+      { href: "/shop", label: "Frakt & returer" },
+      { href: "/shop", label: "Vanliga frågor" },
+      { href: "/our-story", label: "Skötselguide" },
+      { href: "/shop", label: "Villkor" },
+      { href: "/shop", label: "Integritet" },
     ],
   },
   {
-    title: "Social",
+    title: "Socialt",
     links: [
       { href: "https://instagram.com", label: "Instagram" },
       { href: "https://pinterest.com", label: "Pinterest" },
@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-6 flex flex-col gap-2 border-t border-ivory/10 pt-6 text-[11px] uppercase tracking-nav text-ivory/55 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 RAINÉE</p>
-          <p>Sweden / SEK</p>
+          <p>Sverige / SEK</p>
         </div>
       </div>
     </footer>

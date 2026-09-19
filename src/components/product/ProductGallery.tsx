@@ -12,7 +12,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
         >
           <Image
             src={src}
-            alt={`${name} view ${index + 1}`}
+            alt={`${name} vy ${index + 1}`}
             fill
             sizes={index === 0 ? "(max-width: 1024px) 100vw, 60vw" : "(max-width: 1024px) 50vw, 30vw"}
             className="object-cover"

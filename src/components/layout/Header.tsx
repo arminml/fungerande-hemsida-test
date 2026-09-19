@@ -9,9 +9,9 @@ import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from "@/comp
 import { cn } from "@/lib/utils";
 
 const leftNav = [
-  { href: "/shop", label: "Shop" },
-  { href: "/collections/evening", label: "Collections" },
-  { href: "/our-story", label: "Our Story" },
+  { href: "/shop", label: "Butik" },
+  { href: "/collections/evening", label: "Kollektioner" },
+  { href: "/our-story", label: "Om oss" },
 ];
 
 export function Header() {
@@ -39,7 +39,7 @@ export function Header() {
       )}
     >
       <div className="page-pad mx-auto grid h-full max-w-site grid-cols-3 items-center">
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-8 lg:flex" aria-label="Huvudmeny">
           {leftNav.map((item) => (
             <Link
               key={item.href}
@@ -55,7 +55,7 @@ export function Header() {
         <button
           type="button"
           className="flex h-10 w-10 items-center justify-start focus-ring lg:hidden"
-          aria-label="Open menu"
+          aria-label="Öppna meny"
           onClick={() => setMenuOpen(true)}
         >
           <Menu className="h-5 w-5" />
@@ -64,7 +64,7 @@ export function Header() {
         <Link
           href="/"
           className="justify-self-center font-serif text-[26px] tracking-[0.28em] text-espresso focus-ring sm:text-[28px]"
-          aria-label="RAINÉE home"
+          aria-label="RAINÉE startsida"
         >
           RAINÉE
         </Link>
@@ -76,12 +76,12 @@ export function Header() {
             onClick={() => setSearchOpen(true)}
           >
             <Search className="h-4 w-4" aria-hidden />
-            <span className="hidden lg:inline">Search</span>
+            <span className="hidden lg:inline">Sök</span>
           </button>
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center focus-ring sm:hidden"
-            aria-label="Search"
+            aria-label="Sök"
             onClick={() => setSearchOpen(true)}
           >
             <Search className="h-4 w-4" />
@@ -89,14 +89,14 @@ export function Header() {
           <Link
             href="/our-story"
             className="hidden h-10 w-10 items-center justify-center focus-ring lg:inline-flex"
-            aria-label="Account"
+            aria-label="Konto"
           >
             <User className="h-4 w-4" />
           </Link>
           <button
             type="button"
             className="inline-flex h-10 items-center gap-2 px-1 focus-ring"
-            aria-label={`Shopping bag, ${count} items`}
+            aria-label={`Väska, ${count} varor`}
             onClick={() => setCartOpen(true)}
           >
             <ShoppingBag className="h-4 w-4" />
@@ -108,13 +108,13 @@ export function Header() {
       <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
         <SheetContent side="left" className="bg-ivory">
           <SheetHeader className="flex flex-row items-center justify-between">
-            <SheetTitle>Menu</SheetTitle>
-            <SheetClose className="focus-ring" aria-label="Close menu">
+            <SheetTitle>Meny</SheetTitle>
+            <SheetClose className="focus-ring" aria-label="Stäng meny">
               <X className="h-4 w-4" />
             </SheetClose>
           </SheetHeader>
-          <nav className="flex flex-col gap-7 px-6 py-10" aria-label="Mobile">
-            {[...leftNav, { href: "/shop", label: "The Collection" }].map((item) => (
+          <nav className="flex flex-col gap-7 px-6 py-10" aria-label="Mobilmeny">
+            {[...leftNav, { href: "/shop", label: "Kollektionen" }].map((item) => (
               <Link
                 key={item.label}
                 href={item.href}

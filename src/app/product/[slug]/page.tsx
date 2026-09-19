@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product) return { title: "Product" };
+  if (!product) return { title: "Produkt" };
   return { title: product.name, description: product.description };
 }
 
@@ -37,8 +37,8 @@ export default async function ProductPage({
         <ProductInfo product={product} />
       </div>
       <section className="mt-24">
-        <p className="label">You may also like</p>
-        <h2 className="mt-3 font-serif text-3xl">Further pieces</h2>
+        <p className="label">Du kanske också gillar</p>
+        <h2 className="mt-3 font-serif text-3xl">Fler modeller</h2>
         <ProductGrid products={related} className="mt-10" />
       </section>
     </div>

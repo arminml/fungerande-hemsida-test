@@ -17,7 +17,7 @@ export function EditorialStory() {
               className="object-cover"
             />
           </div>
-          <p className="mt-3 text-[10px] uppercase tracking-label text-mute">02 / The RAINÉE woman</p>
+          <p className="mt-3 text-[10px] uppercase tracking-label text-mute">02 / RAINÉE-kvinnan</p>
         </Reveal>
 
         <div className="relative lg:col-span-5 lg:pt-24">
@@ -32,16 +32,16 @@ export function EditorialStory() {
               />
             </div>
             <div className="lg:mt-[58%]">
-              <p className="label">The RAINÉE woman</p>
+              <p className="label">RAINÉE-kvinnan</p>
               <h2 className="mt-4 font-serif text-4xl font-normal leading-[1.05] md:text-5xl">
-                For evenings without an <em className="italic">ending.</em>
+                För kvällar utan <em className="italic">slut.</em>
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">
-                RAINÉE was created around a simple idea: the pieces we carry should feel as considered as
-                the moments we dress for. Each design balances timeless silhouettes with modern femininity.
+                RAINÉE skapades kring en enkel idé: det vi bär med oss ska kännas lika genomtänkt som
+                stunderna vi klär oss för. Varje modell balanserar tidlösa silhuetter med modern femininitet.
               </p>
               <ButtonLink href="/our-story" variant="line" arrow className="mt-8">
-                Our story
+                Vår historia
               </ButtonLink>
             </div>
           </Reveal>

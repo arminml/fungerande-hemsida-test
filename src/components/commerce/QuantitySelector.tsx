@@ -14,7 +14,7 @@ export function QuantitySelector({
       <button
         type="button"
         className="flex h-10 w-10 items-center justify-center text-espresso focus-ring"
-        aria-label="Decrease quantity"
+        aria-label="Minska antal"
         onClick={() => onChange(Math.max(1, value - 1))}
       >
         <Minus className="h-3 w-3" />
@@ -25,7 +25,7 @@ export function QuantitySelector({
       <button
         type="button"
         className="flex h-10 w-10 items-center justify-center text-espresso focus-ring"
-        aria-label="Increase quantity"
+        aria-label="Öka antal"
         onClick={() => onChange(value + 1)}
       >
         <Plus className="h-3 w-3" />

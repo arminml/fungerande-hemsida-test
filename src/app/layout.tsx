@@ -26,16 +26,16 @@ const sans = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "RAINÉE — Evening clutches",
+    default: "RAINÉE — Kuvertväskor för kvällen",
     template: "%s — RAINÉE",
   },
   description:
-    "Timeless clutches designed to accompany evenings, celebrations and everything in between.",
+    "Tidlösa kuvertväskor skapade för kvällar, firanden och allt däremellan.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="sv" className={`${serif.variable} ${sans.variable}`}>
       <body className="bg-ivory font-sans text-espresso antialiased">
         <CartProvider>
           <AnnouncementBar />

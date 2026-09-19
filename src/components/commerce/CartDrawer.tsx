@@ -16,17 +16,17 @@ export function CartDrawer() {
     <Sheet open={cartOpen} onOpenChange={setCartOpen}>
       <SheetContent side="right" className="bg-ivory">
         <SheetHeader className="flex flex-row items-center justify-between">
-          <SheetTitle>Your bag</SheetTitle>
-          <button type="button" className="focus-ring" aria-label="Close bag" onClick={() => setCartOpen(false)}>
+          <SheetTitle>Din väska</SheetTitle>
+          <button type="button" className="focus-ring" aria-label="Stäng väskan" onClick={() => setCartOpen(false)}>
             <X className="h-4 w-4" />
           </button>
         </SheetHeader>
 
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-start justify-center px-8">
-            <p className="font-serif text-3xl">Your bag is currently empty.</p>
+            <p className="font-serif text-3xl">Din väska är tom.</p>
             <ButtonLink href="/shop" className="mt-8" arrow onClick={() => setCartOpen(false)}>
-              Explore the collection
+              Upptäck kollektionen
             </ButtonLink>
           </div>
         ) : (
@@ -60,7 +60,7 @@ export function CartDrawer() {
                             className="text-[10px] uppercase tracking-label text-mute hover:text-espresso focus-ring"
                             onClick={() => removeItem(item.id)}
                           >
-                            Remove
+                            Ta bort
                           </button>
                         </div>
                       </div>
@@ -71,19 +71,19 @@ export function CartDrawer() {
             </div>
             <div className="border-t border-line px-6 py-6">
               <div className="flex items-center justify-between text-sm">
-                <span className="uppercase tracking-nav">Subtotal</span>
+                <span className="uppercase tracking-nav">Delsumma</span>
                 <span>{formatSek(subtotal)}</span>
               </div>
-              <p className="mt-2 text-[12px] text-mute">Shipping calculated at checkout.</p>
+              <p className="mt-2 text-[12px] text-mute">Frakt beräknas i kassan.</p>
               <Button className="mt-6 w-full" onClick={() => setCartOpen(false)}>
-                Checkout
+                Till kassan
               </Button>
               <Link
                 href="/bag"
                 className="mt-4 block text-center text-[11px] uppercase tracking-label text-mute hover:text-espresso"
                 onClick={() => setCartOpen(false)}
               >
-                View bag
+                Visa väska
               </Link>
             </div>
           </>
