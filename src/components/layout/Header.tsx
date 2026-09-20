@@ -6,7 +6,7 @@ export function Header() {
   return (
     <HeaderShell>
       <div className="page-pad mx-auto grid h-full max-w-site grid-cols-3 items-center">
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Huvudmeny">
+        <nav className="hidden items-center gap-5 xl:gap-8 lg:flex" aria-label="Huvudmeny">
           {mainNav.map((item) => (
             <HeaderNavLink key={item.href} href={item.href}>
               {item.label}

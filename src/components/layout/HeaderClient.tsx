@@ -43,7 +43,7 @@ export function HeaderNavLink({
     <Link
       href={href}
       data-active={pathname === href ? "true" : "false"}
-      className="nav-underline text-[11px] uppercase tracking-nav text-espresso focus-ring"
+      className="nav-underline shrink-0 text-[11px] uppercase tracking-nav text-espresso focus-ring"
     >
       {children}
     </Link>
