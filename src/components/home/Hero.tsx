@@ -10,12 +10,11 @@ export function Hero() {
   return (
     <section className="relative min-h-[78vh] overflow-hidden bg-espresso lg:min-h-[88vh]">
       <Image
-        src="/images/pexels-malcolm-garret-3023588-11681818%20(2).jpg"
+        src="/images/emma.jpeg"
         alt="RAINÉE clutch campaign"
         fill
         priority
-        quality={100}
-        unoptimized
+        quality={95}
         sizes="100vw"
         className="object-cover object-[50%_28%] md:object-[55%_32%] lg:object-[58%_35%]"
       />
