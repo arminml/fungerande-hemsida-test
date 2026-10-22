@@ -35,10 +35,10 @@ export function SignatureProduct() {
           className="mt-8"
           onClick={() => {
             addItem(product.slug, color);
-            toast("Tillagd i väskan", { description: product.name });
+            toast("Tillagd i varukorgen", { description: product.name });
           }}
         >
-          Lägg i väskan
+          Lägg i varukorgen
         </Button>
         <Accordion type="single" collapsible className="mt-10 max-w-md">
           <AccordionItem value="details">

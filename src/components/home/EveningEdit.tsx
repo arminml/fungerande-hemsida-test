@@ -18,8 +18,8 @@ export function EveningEdit() {
           <p className="text-[11px] uppercase tracking-label text-champagne">Kvällens urval</p>
           <h2 className="mt-4 font-serif text-5xl font-normal md:text-6xl">Efter mörker.</h2>
           <p className="mt-6 text-[15px] leading-relaxed text-ivory/80">
-            Väskor formgivna för middagar som blir drinkar,
-            <br className="hidden sm:block" /> och drinkar som blir berättelser.
+            Ett elegant regnskydd för din handväska,
+            <br className="hidden sm:block" /> på väg till middagen och hem igen.
           </p>
           <ButtonLink href="/collections/evening" className="mt-10 bg-ivory text-espresso hover:bg-stone">
             Handla urvalet

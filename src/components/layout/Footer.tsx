@@ -5,7 +5,7 @@ const columns = [
     title: "Butik",
     links: [
       { href: "/shop", label: "Nyheter" },
-      { href: "/shop", label: "Kuvertväskor" },
+      { href: "/shop", label: "Väsköverdrag" },
       { href: "/shop", label: "Bästsäljare" },
       { href: "/collections/evening", label: "Kollektioner" },
     ],

@@ -11,7 +11,7 @@ export function Hero() {
     <section className="relative min-h-[78vh] overflow-hidden bg-espresso lg:min-h-[88vh]">
       <Image
         src="/images/emma.jpeg"
-        alt="RAINÉE clutch campaign"
+        alt="RAINÉE UF:s kampanjbild"
         fill
         priority
         quality={95}
@@ -28,12 +28,12 @@ export function Hero() {
         >
           <p className="text-[11px] uppercase tracking-label text-champagne">Signaturkollektionen</p>
           <h1 className="mt-5 font-serif text-[clamp(2.4rem,6vw,5.5rem)] font-normal leading-[0.95] tracking-tight">
-            Skapad för ögonblicken
+            Skydd för din handväska.
             <br />
-            <em className="italic">du minns.</em>
+            <em className="italic">Med stil.</em>
           </h1>
           <p className="mt-6 max-w-md text-[15px] leading-relaxed text-ivory/80">
-            Tidlösa kuvertväskor skapade för kvällar, firanden och allt däremellan.
+            Ett exklusivt, vattenavvisande skydd för handväskor — för dagar då regnet följer med.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-8">
             <ButtonLink href="/shop" className="bg-ivory text-espresso hover:bg-stone">

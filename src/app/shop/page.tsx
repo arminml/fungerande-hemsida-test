@@ -6,7 +6,7 @@ import { ProductGrid } from "@/components/product/ProductGrid";
 
 const filters: { id: "all" | ProductCategory; label: string }[] = [
   { id: "all", label: "Alla" },
-  { id: "clutches", label: "Kuvertväskor" },
+  { id: "clutches", label: "Väsköverdrag" },
   { id: "evening", label: "Kväll" },
   { id: "signature", label: "Signatur" },
   { id: "new", label: "Nyheter" },
@@ -31,7 +31,7 @@ export default function ShopPage() {
       <p className="label">Butik</p>
       <h1 className="mt-3 font-serif text-5xl font-normal md:text-6xl">Kollektionen</h1>
       <p className="mt-4 max-w-lg text-sm leading-relaxed text-mute">
-        Kuvertväskor och genomtänkta accessoarer — att hålla i genom middagen, drinkarna och vägen hem.
+        Eleganta, vattenavvisande skydd för handväskor. Hitta ett väsköverdrag som passar din stil.
       </p>
 
       <div className="mt-10 flex flex-col gap-6 border-y border-line py-5 md:flex-row md:items-center md:justify-between">

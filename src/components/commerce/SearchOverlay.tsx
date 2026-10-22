@@ -7,7 +7,7 @@ import { searchProducts } from "@/data/products";
 import { ProductCard } from "@/components/product/ProductCard";
 import { useCart } from "@/components/providers/CartProvider";
 
-const popular = ["Kuvertväskor", "Kväll", "The Amélie", "Nyheter"];
+const popular = ["Väsköverdrag", "Regnskydd", "The Amélie", "Nyheter"];
 
 export function SearchOverlay() {
   const { searchOpen, setSearchOpen } = useCart();

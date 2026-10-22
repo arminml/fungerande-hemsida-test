@@ -34,13 +34,13 @@ export function EditorialGrid() {
             </figcaption>
           </figure>
           <figure className="relative col-span-3 aspect-[3/4] overflow-hidden md:col-span-2">
-            <Image src={c.src} alt={c.alt} fill className="object-cover" sizes="30vw" />
+            <Image src="/aestheticbilder/bild_22.jpeg" alt={c.alt} fill className="object-cover" sizes="30vw" />
             <figcaption className="absolute bottom-3 left-3 text-[10px] uppercase tracking-label text-ivory">
               {c.caption}
             </figcaption>
           </figure>
           <figure className="relative col-span-2 aspect-square overflow-hidden md:col-span-2 md:aspect-[4/5]">
-            <Image src={d.src} alt={d.alt} fill className="object-cover" sizes="33vw" />
+            <Image src="/aestheticbilder/bild_25.jpeg" alt={d.alt} fill className="object-cover" sizes="33vw" />
             <figcaption className="absolute bottom-3 left-3 text-[10px] uppercase tracking-label text-ivory">
               {d.caption}
             </figcaption>
@@ -52,7 +52,7 @@ export function EditorialGrid() {
             </figcaption>
           </figure>
           <figure className="relative col-span-3 aspect-[3/4] overflow-hidden md:col-span-2 md:aspect-[4/5]">
-            <Image src={f.src} alt={f.alt} fill className="object-cover" sizes="33vw" />
+            <Image src="/aestheticbilder/bild_28.jpeg" alt={f.alt} fill className="object-cover" sizes="33vw" />
             <figcaption className="absolute bottom-3 left-3 text-[10px] uppercase tracking-label text-ivory">
               {f.caption}
             </figcaption>

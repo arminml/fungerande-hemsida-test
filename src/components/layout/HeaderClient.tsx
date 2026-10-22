@@ -130,7 +130,7 @@ export function HeaderActions() {
       <button
         type="button"
         className="inline-flex h-10 items-center gap-2 px-1 focus-ring"
-        aria-label={`Väska, ${count} varor`}
+        aria-label={`Varukorg, ${count} varor`}
         onClick={() => setCartOpen(true)}
       >
         <ShoppingBag className="h-4 w-4" />

@@ -22,7 +22,7 @@ export function ProductCard({
         <Link href={`/product/${product.slug}`} className="absolute inset-0 focus-ring">
           <Image
             src={product.image}
-            alt={`${product.name} kuvertväska`}
+            alt={`${product.name} — produktbild`}
             fill
             sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -46,7 +46,7 @@ export function ProductCard({
           className="absolute inset-x-4 bottom-4 z-10 bg-ivory/95 py-2.5 text-[10px] uppercase tracking-label text-espresso opacity-0 transition-opacity duration-300 focus-ring group-hover:opacity-100 max-md:opacity-100"
           onClick={() => {
             addItem(product.slug, product.defaultColor);
-            toast("Tillagd i väskan", { description: product.name });
+            toast("Tillagd i varukorgen", { description: product.name });
           }}
         >
           Snabbköp

@@ -10,7 +10,7 @@ export function EditorialStory() {
         <Reveal className="relative lg:col-span-7">
           <div className="relative aspect-[3/4] overflow-hidden md:aspect-[4/5]">
             <Image
-              src={images.editorialLarge.src}
+              src="/aestheticbilder/bild_23.jpeg"
               alt={images.editorialLarge.alt}
               fill
               sizes="(max-width: 1024px) 100vw, 55vw"
@@ -24,7 +24,7 @@ export function EditorialStory() {
           <Reveal delay={0.1}>
             <div className="relative mx-auto mb-10 aspect-[4/5] w-[70%] overflow-hidden lg:absolute lg:-left-16 lg:top-0 lg:w-[58%]">
               <Image
-                src={images.editorialSmall.src}
+                src="/aestheticbilder/bild_29.jpeg"
                 alt={images.editorialSmall.alt}
                 fill
                 sizes="40vw"
@@ -34,7 +34,7 @@ export function EditorialStory() {
             <div className="lg:mt-[58%]">
               <p className="label">RAINÉE-kvinnan</p>
               <h2 className="mt-4 font-serif text-4xl font-normal leading-[1.05] md:text-5xl">
-                För kvällar utan <em className="italic">slut.</em>
+                Din handväska. <em className="italic">Din stil.</em>
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">
                 RAINÉE skapades kring en enkel idé: det vi bär med oss ska kännas lika genomtänkt som

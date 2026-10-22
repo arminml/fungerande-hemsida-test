@@ -12,11 +12,11 @@ export default function BagPage() {
 
   return (
     <div className="page-pad mx-auto max-w-3xl py-16 md:py-24">
-      <p className="label">Din väska</p>
-      <h1 className="mt-3 font-serif text-5xl">Väska</h1>
+      <p className="label">Din varukorg</p>
+      <h1 className="mt-3 font-serif text-5xl">Varukorg</h1>
       {items.length === 0 ? (
         <div className="mt-16">
-          <p className="font-serif text-3xl">Din väska är tom.</p>
+          <p className="font-serif text-3xl">Din varukorg är tom.</p>
           <ButtonLink href="/shop" className="mt-8" arrow>
             Upptäck kollektionen
           </ButtonLink>

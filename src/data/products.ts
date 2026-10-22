@@ -38,17 +38,17 @@ export const products: Product[] = [
     name: "The Amélie",
     price: 1495,
     description:
-      "En skulptural kuvertväska byggd kring en ren silhuett och återhållna detaljer.",
+      "Ett exklusivt, vattenavvisande skydd för din handväska.",
     longDescription:
-      "The Amélie är RAINÉES signaturform — en kompakt kuvertväska med en stillsam kurva, ett diskret spänne och en närvaro som inte behöver höja rösten. Den är till för att hållas, ställas ner och bäras vidare genom en lång kväll.",
+      "The Amélie är ett elegant väsköverdrag som hjälper till att skydda din handväska mot regn. Ett funktionellt komplement till väskan du redan använder.",
     details: [
-      "Strukturerad kuvertväska med dold magnetstängning",
-      "Inre slip-ficka",
-      "Valfri kedjerem, 48 cm fall",
-      "Mått: 22 × 13 × 5 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Slätt kalvskinn. Bomullsfoder. Mässing med dämpad finish. Torka med en mjuk, torr trasa. Skydda mot fukt och direkt sol.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.ivory, colors.black],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "signature"],
@@ -62,17 +62,17 @@ export const products: Product[] = [
     name: "The Camille",
     price: 1695,
     description:
-      "En något förlängd kuvertväska med vikt klaff — gjord för middagar som vägrar ta slut.",
+      "Ett elegant regnskydd för handväskor, med en stilren känsla.",
     longDescription:
-      "The Camille tar sin linje från ett kuvert: en vikt klaff, en smal profil och precis tillräcklig volym för kvällens nödvändigheter. Den sitter nära kroppen och läses som ett accessoar, inte som ett utställningsföremål.",
+      "The Camille är ett vattenavvisande överdrag för din handväska. För dig som vill ge väskan skydd mot regn och samtidigt behålla en elegant stil.",
     details: [
-      "Kuvertsilhuett med överviktsklaff",
-      "Inre kortfack",
-      "Avtagbar läderrem",
-      "Mått: 25 × 14 × 4 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Graverat kalvskinn. Mockafoder. Tonal söm. Förvara i den medföljande dustbagen.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.ivory, colors.espresso, colors.champagne],
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
@@ -85,17 +85,17 @@ export const products: Product[] = [
     name: "The Éloise",
     price: 1595,
     description:
-      "En kompakt ramväska med ett vintage-eko och en genomgående modern återhållsamhet.",
+      "Ett stilrent väsköverdrag som hjälper till att skydda mot regn.",
     longDescription:
-      "The Éloise påminner om ramväskorna från femtiotalets kvällar, men utan ornament. Metallramen är smal, lädret är tyst och skalan är precis — tillräckligt, aldrig mer.",
+      "The Éloise kombinerar ett elegant uttryck med vattenavvisande skydd för handväskor. Det bärs över din väska som ett komplement när vädret skiftar.",
     details: [
-      "Kiss-lock-ram",
-      "Ett inre fack",
-      "Kort kedjehandtag",
-      "Mått: 20 × 12 × 6 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Polerat kalvskinn. Bomullstwillfoder. Åldrad mässingsram. Undvik kontakt med parfym och alkoholbaserade produkter.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.black, colors.espresso, colors.ivory],
     defaultColor: "black",
     categories: ["clutches", "evening", "signature"],
@@ -108,17 +108,17 @@ export const products: Product[] = [
     name: "The Margaux",
     price: 1795,
     description:
-      "En mjukt strukturerad pouch med samlad öppning och en längre, tystare linje.",
+      "Vattenavvisande skydd för handväskan, från vardag till kväll.",
     longDescription:
-      "The Margaux är samlad, inte sladdrig. Volymen är kontrollerad, öppningen dold och ytan lämnad ostörd. Det är väskan för nätter när klänningen redan talar.",
+      "The Margaux är ett väsköverdrag för dig som vill ta med din handväska även när regn väntas. Ett skydd med en exklusiv känsla, som låter funktion få en naturlig plats i din stil.",
     details: [
-      "Mjukt strukturerad pouch",
-      "Dold dragkedja med läderdrag",
-      "Inre dragkedjeficka",
-      "Mått: 24 × 15 × 7 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Nappaläder. Sidenblandat foder. Håll den fylld när den inte används för att behålla formen.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.black, colors.champagne],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "new"],
@@ -132,17 +132,17 @@ export const products: Product[] = [
     name: "The Céleste",
     price: 1895,
     description:
-      "En slank minaudière med champagneyta och nästan ingen hårdvara att avvara.",
+      "Ett elegant skydd för handväskan du tar med dig ut.",
     longDescription:
-      "The Céleste är kollektionens mest formella modell — ett hårt etui mjukat av färg, tänkt för black-tie-rum och sena reservationer. Den rymmer lite, och det är poängen.",
+      "The Céleste är ett vattenavvisande skydd för handväskor. Ett elegant komplement på väg till middagen, festen eller en vanlig dag på stan.",
     details: [
-      "Styv minaudière-konstruktion",
-      "Trycklås",
-      "Spegelkort i locket",
-      "Mått: 18 × 11 × 5 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Läderklätt etui. Satinfoder. Ljus champagnehårdvara. Förvara separat från mörkare läder.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.champagne, colors.ivory, colors.black],
     defaultColor: "champagne",
     categories: ["clutches", "evening", "signature", "new"],
@@ -156,17 +156,17 @@ export const products: Product[] = [
     name: "The Noémie",
     price: 1595,
     description:
-      "En rektangulär kuvertväska med en enda söm och en matt, nästan arkitektonisk yta.",
+      "Ett vattenavvisande väsköverdrag med ett stilrent uttryck.",
     longDescription:
-      "The Noémie är geometri, inte dekoration. Fyra plan, en söm, ett nedsänkt spänne. Den fotograferas väl just för att den gör så lite.",
+      "The Noémie hjälper till att skydda din handväska mot regn. Ett funktionellt överdrag för dig som uppskattar ett elegant uttryck även under regniga dagar.",
     details: [
-      "Boxclutch med nedsänkt spänne",
-      "Delat innerfack",
-      "Valfri handledsrem",
-      "Mått: 23 × 13 × 5 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Matt kalvskinn. Ofodrat läderinner. Konditionera ibland med en färglös kräm.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.black, colors.ivory, colors.espresso],
     defaultColor: "black",
     categories: ["clutches", "evening"],
@@ -179,17 +179,17 @@ export const products: Product[] = [
     name: "The Isabelle",
     price: 1745,
     description:
-      "En draperad kuvertväska som samlas vid sidan — kollektionens mest feminina linje.",
+      "Regnskydd för din handväska, med en exklusiv känsla.",
     longDescription:
-      "The Isabelle är samlad på ena sidan som tyg. Draperingen är satt, inte slumpmässig, och lädret är valt för hur det tar ljus snarare än hur det glänser.",
+      "The Isabelle är ett elegant överdrag som bärs över handväskan. Det vattenavvisande skyddet är ett komplement till din väska när regnet kommer.",
     details: [
-      "Asymmetrisk drapering",
-      "Sidospänne",
-      "Inre slip-ficka",
-      "Mått: 26 × 14 × 6 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
     materials:
-      "Mjuk nappa. Bomullsfoder. Undvik att överfylla för att bevara draperingen.",
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.ivory, colors.champagne, colors.espresso],
     defaultColor: "ivory",
     categories: ["clutches", "evening", "new"],
@@ -203,16 +203,17 @@ export const products: Product[] = [
     name: "The Juliette",
     price: 1645,
     description:
-      "En kompakt oval kuvertväska med en vintagelinje och ett samtida, odekorerat ansikte.",
+      "Ett elegant väsköverdrag för dagar då vädret skiftar.",
     longDescription:
-      "The Juliette är en oval — en form som vilar bekvämt i handen och ser övervägd ut på ett bord. Ingen logotyp, ingen hårdvara utöver ett smalt lås.",
+      "The Juliette är ett vattenavvisande skydd för handväskor. För dig som vill förena ett elegant uttryck med en praktisk funktion i vardagen.",
     details: [
-      "Oval silhuett",
-      "Smal låsstängning",
-      "Rymmer en kompakt telefon",
-      "Mått: 21 × 12 × 5 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
-    materials: "Slätt kalvskinn. Mockafoder. Torka av efter användning. Vila i dustbag.",
+    materials:
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.black, colors.ivory],
     defaultColor: "espresso",
     categories: ["clutches", "signature"],
@@ -225,16 +226,17 @@ export const products: Product[] = [
     name: "The Solène",
     price: 1845,
     description:
-      "En högre kvällsväska med ett smalt handtag — för när en clutch vill ha lite mer närvaro.",
+      "Vattenavvisande skydd för handväskan, även på väg till kvällens planer.",
     longDescription:
-      "The Solène står något högre än resten av kollektionen. Ett smalt topphandtag gör det möjligt att bära den i fingrarna, eller att ställa den upprätt bredvid ett glas.",
+      "The Solène är ett regnskydd för handväskor med en exklusiv känsla. Ett elegant sätt att ge väskan skydd mot regn på vägen dit och hem.",
     details: [
-      "Kvällsväska med topphandtag",
-      "Magnetklaff",
-      "Inre dragkedjeficka",
-      "Mått: 20 × 16 × 6 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
-    materials: "Strukturerat kalvskinn. Bomullsfoder. Handtaget är läderlindat.",
+    materials:
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.black, colors.espresso, colors.champagne],
     defaultColor: "black",
     categories: ["evening", "signature"],
@@ -248,16 +250,17 @@ export const products: Product[] = [
     name: "The Adèle",
     price: 1545,
     description:
-      "En liten kvadratisk kuvertväska med ett enda plan av läder och ett nedsänkt guldspänne.",
+      "Ett stilrent skydd för din handväska när regnet kommer.",
     longDescription:
-      "The Adèle är nästan en kvadrat. Dess enda ornament är ett nedsänkt spänne i dämpad champagne — en detalj som ska hittas, inte synas från andra sidan rummet.",
+      "The Adèle är ett vattenavvisande väsköverdrag. Ett funktionellt tillägg till handväskan du redan tycker om, med en elegant känsla.",
     details: [
-      "Kvadratisk kuvertväska",
-      "Nedsänkt spänne",
-      "Rymmer kort och en smal telefon",
-      "Mått: 18 × 18 × 4 cm",
+      "Vattenavvisande skydd för handväskor",
+      "Bärs över handväskan",
+      "Utformat för att hjälpa till att skydda mot regn",
+      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
     ],
-    materials: "Kalvskinn. Satinfoder. Hårdvara i ljus champagne.",
+    materials:
+      "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.ivory, colors.espresso, colors.black],
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
@@ -268,9 +271,9 @@ export const products: Product[] = [
 ];
 
 const searchAliases: Record<string, ProductCategory[]> = {
-  kuvert: ["clutches"],
-  kuvertväska: ["clutches"],
-  kuvertväskor: ["clutches"],
+  väsköverdrag: ["clutches", "evening"],
+  regnskydd: ["clutches", "evening"],
+  väskydd: ["clutches", "evening"],
   kväll: ["evening"],
   kvälls: ["evening"],
   signatur: ["signature"],

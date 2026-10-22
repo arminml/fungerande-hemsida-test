@@ -26,11 +26,11 @@ const sans = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "RAINÉE — Kuvertväskor för kvällen",
+    default: "RAINÉE UF — Eleganta regnskydd för handväskor",
     template: "%s — RAINÉE",
   },
   description:
-    "Tidlösa kuvertväskor skapade för kvällar, firanden och allt däremellan.",
+    "Exklusiva, vattenavvisande skydd för handväskor. Upptäck RAINÉE UF:s eleganta väsköverdrag för regniga dagar.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -7,19 +7,19 @@ const pexels = (id: number, w = 2400) =>
 
 export const storyImages = {
   hero: {
-    src: pexels(1463530),
+    src: "/aestheticbilder/bild_21-upscaled.webp",
     alt: "Regnig europeisk gata med paraplyer i dämpade toner",
   },
   gothenburg: {
-    src: pexels(2101187),
+    src: "/aestheticbilder/bild_26-upscaled.webp",
     alt: "Våt stadsgata i skandinaviskt ljus",
   },
   rainDetail: {
-    src: pexels(459451),
+    src: "/aestheticbilder/bild_27-upscaled.webp",
     alt: "Regndroppar mot en ruta",
   },
   handbag: {
-    src: "/images/pexels-malcolm-garret-3023588-11681818%20(2).jpg",
+    src: "/aestheticbilder/bild_19-upscaled.webp",
     alt: "Modell med beige kuvertväska",
   },
   material: {
@@ -35,7 +35,7 @@ export const storyImages = {
     alt: "Kvinna i kappa på en stadsgata i neutralt ljus",
   },
   functionBreak: {
-    src: pexels(291762),
+    src: "/aestheticbilder/bild_23-upscaled.webp",
     alt: "Neutral modebild i urban miljö",
   },
   textile: {
@@ -47,7 +47,7 @@ export const storyImages = {
     alt: "Närbild av handväska och material",
   },
   close: {
-    src: pexels(2563681),
+    src: "/aestheticbilder/bild_22-upscaled.webp",
     alt: "Varm stenfasad i skandinavisk arkitektur",
   },
 } as const;

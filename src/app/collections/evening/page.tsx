@@ -5,7 +5,7 @@ import { ProductGrid } from "@/components/product/ProductGrid";
 
 export const metadata = {
   title: "Efter mörker",
-  description: "En kollektion för ljusstakebord, sena reservationer och timmarna som följer.",
+  description: "Eleganta, vattenavvisande väsköverdrag för handväskan du tar med dig ut på kvällen.",
 };
 
 export default function EveningCollectionPage() {
@@ -28,7 +28,7 @@ export default function EveningCollectionPage() {
             <p className="text-[11px] uppercase tracking-label text-champagne">RAINÉE-urval</p>
             <h1 className="mt-4 font-serif text-5xl font-normal md:text-6xl">Efter mörker</h1>
             <p className="mt-5 text-[15px] leading-relaxed text-ivory/80">
-              En kollektion för ljusstakebord, sena reservationer och timmarna som följer.
+              Vattenavvisande skydd för handväskan du tar med dig ut på kvällen.
             </p>
           </div>
         </div>

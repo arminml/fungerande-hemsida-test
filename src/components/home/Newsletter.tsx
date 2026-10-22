@@ -13,17 +13,17 @@ export function Newsletter() {
       toast("Ange en giltig e-postadress");
       return;
     }
-    toast("Du är med på listan", { description: "En platshållarbekräftelse." });
+    toast("Anmälan är inte tillgänglig ännu", { description: "Din e-postadress har inte sparats." });
     setEmail("");
   };
 
   return (
     <section className="bg-ink text-ivory">
       <div className="page-pad mx-auto max-w-xl py-20 text-center md:py-24">
-        <p className="text-[11px] uppercase tracking-label text-champagne">Privat lista</p>
-        <h2 className="mt-4 font-serif text-4xl font-normal md:text-5xl">Stanna lite längre.</h2>
+        <p className="text-[11px] uppercase tracking-label text-champagne">Nyheter från RAINÉE UF</p>
+        <h2 className="mt-4 font-serif text-4xl font-normal md:text-5xl">Håll dig uppdaterad.</h2>
         <p className="mt-4 text-sm leading-relaxed text-ivory/70">
-          Nya kollektioner, privata släpp och berättelser från RAINÉES värld.
+          Anmälan till nyhetsbrevet är ännu inte tillgänglig.
         </p>
         <form onSubmit={onSubmit} className="mt-10 flex items-end gap-4">
           <label className="flex-1 text-left">

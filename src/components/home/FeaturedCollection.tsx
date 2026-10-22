@@ -11,10 +11,10 @@ export function FeaturedCollection() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="label">Kollektionen</p>
-            <h2 className="mt-3 font-serif text-4xl font-normal md:text-5xl">Objekt att åtrå.</h2>
+            <h2 className="mt-3 font-serif text-4xl font-normal md:text-5xl">Skydd med stil.</h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-mute">
-            Formgivna att bäras långt efter att kvällen är slut.
+            Vattenavvisande väsköverdrag som förenar funktion med en exklusiv känsla.
           </p>
         </div>
       </Reveal>

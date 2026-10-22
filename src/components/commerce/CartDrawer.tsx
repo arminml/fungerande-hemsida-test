@@ -16,15 +16,15 @@ export function CartDrawer() {
     <Sheet open={cartOpen} onOpenChange={setCartOpen}>
       <SheetContent side="right" className="bg-ivory">
         <SheetHeader className="flex flex-row items-center justify-between">
-          <SheetTitle>Din väska</SheetTitle>
-          <button type="button" className="focus-ring" aria-label="Stäng väskan" onClick={() => setCartOpen(false)}>
+          <SheetTitle>Din varukorg</SheetTitle>
+          <button type="button" className="focus-ring" aria-label="Stäng varukorgen" onClick={() => setCartOpen(false)}>
             <X className="h-4 w-4" />
           </button>
         </SheetHeader>
 
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-start justify-center px-8">
-            <p className="font-serif text-3xl">Din väska är tom.</p>
+            <p className="font-serif text-3xl">Din varukorg är tom.</p>
             <ButtonLink href="/shop" className="mt-8" arrow onClick={() => setCartOpen(false)}>
               Upptäck kollektionen
             </ButtonLink>
@@ -83,7 +83,7 @@ export function CartDrawer() {
                 className="mt-4 block text-center text-[11px] uppercase tracking-label text-mute hover:text-espresso"
                 onClick={() => setCartOpen(false)}
               >
-                Visa väska
+                Visa varukorg
               </Link>
             </div>
           </>
