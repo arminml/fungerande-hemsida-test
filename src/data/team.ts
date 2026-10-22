@@ -62,6 +62,28 @@ export const teamMembers: TeamMember[] = [
     image: "/images/klara.jpeg",
     imageAlt: "Porträttplats för Klara Brockmark — tillfällig bild, inte Klara",
   },
+  {
+    slug: "eira-ohlin",
+    number: "05",
+    editorialLabel: "05 / Ekonomi",
+    displayName: "Eira",
+    lastName: "Ohlin",
+    role: "Ekonomiansvarig",
+    bio: "bio kommer snart",
+    image: "/images/eira.jpeg",
+    imageAlt: "Porträttplats för Eira Ohlin — tillfällig bild, inte Eira",
+  },
+  {
+    slug: "ida-onnheim",
+    number: "06",
+    editorialLabel: "06 / Inköp",
+    displayName: "Ida",
+    lastName: "Önnheim",
+    role: "Inköpsansvarig",
+    bio: "Hallå! Jag heter Ida och är som alla andra 18 år. Även jag har turen att dela klassrum med VD Jonte varje dag. Jag bor i öjersjö och är supertaggad på vårt UF år!",
+    image: "/images/ida.jpeg",
+    imageAlt: "Porträttplats för Ida Önnheim — tillfällig bild, inte Ida",
+  },
 ];
 
 export const teamIntroImage = {

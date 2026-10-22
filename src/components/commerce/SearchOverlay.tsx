@@ -7,7 +7,7 @@ import { searchProducts } from "@/data/products";
 import { ProductCard } from "@/components/product/ProductCard";
 import { useCart } from "@/components/providers/CartProvider";
 
-const popular = ["Väsköverdrag", "Regnskydd", "The Amélie", "Nyheter"];
+const popular = ["Väsköverdrag", "Regnskydd", "La normale noire", "Nyheter"];
 
 export function SearchOverlay() {
   const { searchOpen, setSearchOpen } = useCart();
@@ -55,7 +55,7 @@ export function SearchOverlay() {
                 type="button"
                 className="font-serif text-xl italic text-espresso focus-ring"
                 onClick={() => {
-                  if (term === "The Amélie") {
+                  if (term === "La normale noire") {
                     setSearchOpen(false);
                     router.push("/product/the-amelie");
                     return;

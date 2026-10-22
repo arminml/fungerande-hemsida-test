@@ -23,6 +23,7 @@ export type Product = {
   hoverImage: string;
   gallery: string[];
   badge?: "Nyhet" | "Bästsäljare";
+  hideOptions?: boolean;
 };
 
 export const colors: Record<string, ProductColor> = {
@@ -35,96 +36,116 @@ export const colors: Record<string, ProductColor> = {
 export const products: Product[] = [
   {
     slug: "the-amelie",
-    name: "The Amélie",
-    price: 1495,
+    name: "La normale noire",
+    price: 179,
     description:
       "Ett exklusivt, vattenavvisande skydd för din handväska.",
     longDescription:
-      "The Amélie är ett elegant väsköverdrag som hjälper till att skydda din handväska mot regn. Ett funktionellt komplement till väskan du redan använder.",
+      "La normale noire är ett elegant väsköverdrag som hjälper till att skydda din handväska mot regn. Ett funktionellt komplement till väskan du redan använder.",
     details: [
       "Vattenavvisande skydd för handväskor",
       "Bärs över handväskan",
       "Utformat för att hjälpa till att skydda mot regn",
       "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
+      "Bredd: 23-35 cm",
+      "Höjd: 17-26 cm (inkl. eventuellt handtag)",
+      "Djup: 8-16 cm",
+      "*Måtten kan variera beroende på modell/form på din väska*",
     ],
+    hideOptions: true,
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.ivory, colors.black],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "signature"],
-    image: images.bags.amelie,
+    image: "/produktbilder/laNormaleNoire.jpg",
     hoverImage: images.bags.amelieAlt,
-    gallery: [images.bags.amelie, images.bags.amelieAlt, images.editorialSmall.src, images.mood[5].src],
+    gallery: ["/produktbilder/laNormaleNoire.jpg", images.bags.amelieAlt, images.editorialSmall.src, images.mood[5].src],
     badge: "Bästsäljare",
   },
   {
-    slug: "the-camille",
-    name: "The Camille",
-    price: 1695,
+    slug: "la-petite-noire",
+    name: "La petite noire",
+    price: 149,
     description:
       "Ett elegant regnskydd för handväskor, med en stilren känsla.",
     longDescription:
-      "The Camille är ett vattenavvisande överdrag för din handväska. För dig som vill ge väskan skydd mot regn och samtidigt behålla en elegant stil.",
+      "La petite noire är ett vattenavvisande överdrag för din handväska. För dig som vill ge väskan skydd mot regn och samtidigt behålla en elegant stil.",
     details: [
       "Vattenavvisande skydd för handväskor",
       "Bärs över handväskan",
       "Utformat för att hjälpa till att skydda mot regn",
       "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
+      "Bredd: 19-28 cm",
+      "Höjd: 15-23 cm (inkl. eventuellt handtag)",
+      "Djup: 6-10 cm",
+      "*Måtten kan variera beroende på modell/form på din väska*",
     ],
+    hideOptions: true,
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.ivory, colors.espresso, colors.champagne],
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
-    image: images.bags.camille,
+    image: "/produktbilder/la%20petite%20noire.jpg",
     hoverImage: images.bags.camilleAlt,
-    gallery: [images.bags.camille, images.bags.camilleAlt, images.storyDetail.src, images.mood[2].src],
+    gallery: ["/produktbilder/la%20petite%20noire.jpg", images.bags.camilleAlt, images.storyDetail.src, images.mood[2].src],
   },
   {
-    slug: "the-eloise",
-    name: "The Éloise",
-    price: 1595,
+    slug: "la-normale-marron",
+    name: "La normale marron",
+    price: 179,
     description:
       "Ett stilrent väsköverdrag som hjälper till att skydda mot regn.",
     longDescription:
-      "The Éloise kombinerar ett elegant uttryck med vattenavvisande skydd för handväskor. Det bärs över din väska som ett komplement när vädret skiftar.",
+      "La normale marron kombinerar ett elegant uttryck med vattenavvisande skydd för handväskor. Det bärs över din väska som ett komplement när vädret skiftar.",
     details: [
       "Vattenavvisande skydd för handväskor",
       "Bärs över handväskan",
       "Utformat för att hjälpa till att skydda mot regn",
       "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
+      "Bredd: 23-35 cm",
+      "Höjd: 17-26 cm (inkl. eventuellt handtag)",
+      "Djup: 8-16 cm",
+      "*Måtten kan variera beroende på modell/form på din väska*",
     ],
+    hideOptions: true,
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.black, colors.espresso, colors.ivory],
     defaultColor: "black",
     categories: ["clutches", "evening", "signature"],
-    image: images.bags.eloise,
+    image: "/produktbilder/la%20Normale%20marron.jpg",
     hoverImage: images.bags.eloiseAlt,
-    gallery: [images.bags.eloise, images.bags.eloiseAlt, images.mood[6].src, images.bags.amelie],
+    gallery: ["/produktbilder/la%20Normale%20marron.jpg", images.bags.eloiseAlt, images.mood[6].src, images.bags.amelie],
   },
   {
-    slug: "the-margaux",
-    name: "The Margaux",
-    price: 1795,
+    slug: "la-petite-marron",
+    name: "La petite marron",
+    price: 149,
     description:
       "Vattenavvisande skydd för handväskan, från vardag till kväll.",
     longDescription:
-      "The Margaux är ett väsköverdrag för dig som vill ta med din handväska även när regn väntas. Ett skydd med en exklusiv känsla, som låter funktion få en naturlig plats i din stil.",
+      "La petite marron är ett väsköverdrag för dig som vill ta med din handväska även när regn väntas. Ett skydd med en exklusiv känsla, som låter funktion få en naturlig plats i din stil.",
     details: [
       "Vattenavvisande skydd för handväskor",
       "Bärs över handväskan",
       "Utformat för att hjälpa till att skydda mot regn",
       "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
+      "Bredd: 19-28 cm",
+      "Höjd: 15-23 cm (inkl. eventuellt handtag)",
+      "Djup: 6-10 cm",
+      "*Måtten kan variera beroende på modell/form på din väska*",
     ],
+    hideOptions: true,
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.black, colors.champagne],
     defaultColor: "espresso",
     categories: ["clutches", "evening", "new"],
-    image: images.bags.margaux,
+    image: "/produktbilder/la%20petite%20marron.jpg",
     hoverImage: images.bags.margauxAlt,
-    gallery: [images.bags.margaux, images.bags.margauxAlt, images.mood[3].src, images.bags.camille],
+    gallery: ["/produktbilder/la%20petite%20marron.jpg", images.bags.margauxAlt, images.mood[3].src, images.bags.camille],
     badge: "Nyhet",
   },
   {

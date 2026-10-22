@@ -28,9 +28,11 @@ export function SignatureProduct() {
         <h2 className="mt-3 font-serif text-5xl font-normal">{product.name}</h2>
         <p className="mt-3 text-sm text-mute">{formatSek(product.price)}</p>
         <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">{product.description}</p>
-        <div className="mt-8 max-w-xs">
-          <ColorSelector colors={product.colors} value={color} onChange={setColor} />
-        </div>
+        {!product.hideOptions && (
+          <div className="mt-8 max-w-xs">
+            <ColorSelector colors={product.colors} value={color} onChange={setColor} />
+          </div>
+        )}
         <Button
           className="mt-8"
           onClick={() => {

@@ -24,14 +24,18 @@ export function ProductInfo({ product }: { product: Product }) {
       <p className="mt-4 text-sm tracking-wide text-mute">{formatSek(product.price)}</p>
       <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mute">{product.description}</p>
 
-      <div className="mt-8">
-        <ColorSelector colors={product.colors} value={color} onChange={setColor} />
-      </div>
+      {!product.hideOptions && (
+        <>
+          <div className="mt-8">
+            <ColorSelector colors={product.colors} value={color} onChange={setColor} />
+          </div>
 
-      <div className="mt-8">
-        <p className="mb-3 text-[11px] uppercase tracking-label text-mute">Antal</p>
-        <QuantitySelector value={quantity} onChange={setQuantity} />
-      </div>
+          <div className="mt-8">
+            <p className="mb-3 text-[11px] uppercase tracking-label text-mute">Antal</p>
+            <QuantitySelector value={quantity} onChange={setQuantity} />
+          </div>
+        </>
+      )}
 
       <div className="mt-8 flex flex-col gap-3">
         <Button
