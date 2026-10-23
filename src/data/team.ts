@@ -69,7 +69,7 @@ export const teamMembers: TeamMember[] = [
     displayName: "Eira",
     lastName: "Ohlin",
     role: "Ekonomiansvarig",
-    bio: "bio kommer snart",
+    bio: "Hejsan!, Jag heter Eira och är 18 år gammal och bor precis som Emma i fina Torslanda. Om jag inte sitter och räknar på budgeten hittar ni mig troligtvis i stallet. Jag är supertaggad på detta UF-året och hoppas vi tar oss hela vägen i mål utan en konkurs!!",
     image: "/images/eira.jpeg",
     imageAlt: "Porträttplats för Eira Ohlin — tillfällig bild, inte Eira",
   },

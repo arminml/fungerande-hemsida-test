@@ -22,16 +22,7 @@ export function EditorialStory() {
 
         <div className="relative lg:col-span-5 lg:pt-24">
           <Reveal delay={0.1}>
-            <div className="relative mx-auto mb-10 aspect-[4/5] w-[70%] overflow-hidden lg:absolute lg:-left-16 lg:top-0 lg:w-[58%]">
-              <Image
-                src="/aestheticbilder/bild_29.jpeg"
-                alt={images.editorialSmall.alt}
-                fill
-                sizes="40vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="lg:mt-[58%]">
+            <div>
               <p className="label">RAINÉE-kvinnan</p>
               <h2 className="mt-4 font-serif text-4xl font-normal leading-[1.05] md:text-5xl">
                 Din handväska. <em className="italic">Din stil.</em>

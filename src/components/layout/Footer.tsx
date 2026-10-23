@@ -32,9 +32,9 @@ const columns = [
   {
     title: "Socialt",
     links: [
-      { href: "https://instagram.com", label: "Instagram" },
-      { href: "https://pinterest.com", label: "Pinterest" },
-      { href: "https://tiktok.com", label: "TikTok" },
+      { href: "https://www.instagram.com/rainee.uf?dlrf=YjJpaTM3OGNnaHg4", label: "Instagram", newTab: true },
+      { href: "https://facebook.com", label: "Facebook", newTab: true },
+      { href: "https://www.tiktok.com/@rainee.uf", label: "TikTok", newTab: true },
     ],
   },
 ];
@@ -54,6 +54,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
+                      {...("newTab" in link && link.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       className="text-sm text-ivory/80 transition-colors hover:text-ivory focus-ring"
                     >
                       {link.label}

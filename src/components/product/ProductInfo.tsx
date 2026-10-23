@@ -42,16 +42,6 @@ export function ProductInfo({ product }: { product: Product }) {
           className="w-full"
           onClick={() => {
             addItem(product.slug, color, quantity);
-            toast("Tillagd i varukorgen", { description: product.name });
-          }}
-        >
-          Lägg i varukorgen
-        </Button>
-        <Button
-          variant="ghost"
-          className="w-full"
-          onClick={() => {
-            addItem(product.slug, color, quantity);
             toast("Redo för kassan", { description: "Platshållare för kassa." });
           }}
         >

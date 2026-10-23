@@ -59,8 +59,8 @@ export const products: Product[] = [
     defaultColor: "espresso",
     categories: ["clutches", "evening", "signature"],
     image: "/produktbilder/laNormaleNoire.jpg",
-    hoverImage: images.bags.amelieAlt,
-    gallery: ["/produktbilder/laNormaleNoire.jpg", images.bags.amelieAlt, images.editorialSmall.src, images.mood[5].src],
+    hoverImage: "/aestheticbilder/bild_28.jpeg",
+    gallery: ["/produktbilder/laNormaleNoire.jpg", "/aestheticbilder/bild_28.jpeg", "/aestheticbilder/bild_27-upscaled.webp"],
     badge: "Bästsäljare",
   },
   {
@@ -88,8 +88,8 @@ export const products: Product[] = [
     defaultColor: "ivory",
     categories: ["clutches", "evening"],
     image: "/produktbilder/la%20petite%20noire.jpg",
-    hoverImage: images.bags.camilleAlt,
-    gallery: ["/produktbilder/la%20petite%20noire.jpg", images.bags.camilleAlt, images.storyDetail.src, images.mood[2].src],
+    hoverImage: "/aestheticbilder/bild_23.jpeg",
+    gallery: ["/produktbilder/la%20petite%20noire.jpg", "/aestheticbilder/bild_23.jpeg", "/aestheticbilder/bild_17.jpeg"],
   },
   {
     slug: "la-normale-marron",
@@ -117,7 +117,7 @@ export const products: Product[] = [
     categories: ["clutches", "evening", "signature"],
     image: "/produktbilder/la%20Normale%20marron.jpg",
     hoverImage: images.bags.eloiseAlt,
-    gallery: ["/produktbilder/la%20Normale%20marron.jpg", images.bags.eloiseAlt, images.mood[6].src, images.bags.amelie],
+    gallery: ["/produktbilder/la%20Normale%20marron.jpg", images.bags.eloiseAlt, images.mood[6].src],
   },
   {
     slug: "la-petite-marron",
@@ -145,149 +145,8 @@ export const products: Product[] = [
     categories: ["clutches", "evening", "new"],
     image: "/produktbilder/la%20petite%20marron.jpg",
     hoverImage: images.bags.margauxAlt,
-    gallery: ["/produktbilder/la%20petite%20marron.jpg", images.bags.margauxAlt, images.mood[3].src, images.bags.camille],
+    gallery: ["/produktbilder/la%20petite%20marron.jpg", images.bags.margauxAlt, images.mood[3].src],
     badge: "Nyhet",
-  },
-  {
-    slug: "the-celeste",
-    name: "The Céleste",
-    price: 1895,
-    description:
-      "Ett elegant skydd för handväskan du tar med dig ut.",
-    longDescription:
-      "The Céleste är ett vattenavvisande skydd för handväskor. Ett elegant komplement på väg till middagen, festen eller en vanlig dag på stan.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.champagne, colors.ivory, colors.black],
-    defaultColor: "champagne",
-    categories: ["clutches", "evening", "signature", "new"],
-    image: images.bags.celeste,
-    hoverImage: images.bags.celesteAlt,
-    gallery: [images.bags.celeste, images.bags.celesteAlt, images.storyDetail.src, images.mood[2].src],
-    badge: "Nyhet",
-  },
-  {
-    slug: "the-noemie",
-    name: "The Noémie",
-    price: 1595,
-    description:
-      "Ett vattenavvisande väsköverdrag med ett stilrent uttryck.",
-    longDescription:
-      "The Noémie hjälper till att skydda din handväska mot regn. Ett funktionellt överdrag för dig som uppskattar ett elegant uttryck även under regniga dagar.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.black, colors.ivory, colors.espresso],
-    defaultColor: "black",
-    categories: ["clutches", "evening"],
-    image: images.bags.noemie,
-    hoverImage: images.bags.noemieAlt,
-    gallery: [images.bags.noemie, images.bags.noemieAlt, images.mood[5].src, images.bags.eloise],
-  },
-  {
-    slug: "the-isabelle",
-    name: "The Isabelle",
-    price: 1745,
-    description:
-      "Regnskydd för din handväska, med en exklusiv känsla.",
-    longDescription:
-      "The Isabelle är ett elegant överdrag som bärs över handväskan. Det vattenavvisande skyddet är ett komplement till din väska när regnet kommer.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.ivory, colors.champagne, colors.espresso],
-    defaultColor: "ivory",
-    categories: ["clutches", "evening", "new"],
-    image: images.bags.isabelle,
-    hoverImage: images.bags.isabelleAlt,
-    gallery: [images.bags.isabelle, images.bags.isabelleAlt, images.editorialLarge.src, images.bags.margaux],
-    badge: "Nyhet",
-  },
-  {
-    slug: "the-juliette",
-    name: "The Juliette",
-    price: 1645,
-    description:
-      "Ett elegant väsköverdrag för dagar då vädret skiftar.",
-    longDescription:
-      "The Juliette är ett vattenavvisande skydd för handväskor. För dig som vill förena ett elegant uttryck med en praktisk funktion i vardagen.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.espresso, colors.black, colors.ivory],
-    defaultColor: "espresso",
-    categories: ["clutches", "signature"],
-    image: images.bags.juliette,
-    hoverImage: images.bags.julietteAlt,
-    gallery: [images.bags.juliette, images.bags.julietteAlt, images.mood[0].src, images.bags.amelie],
-  },
-  {
-    slug: "the-solene",
-    name: "The Solène",
-    price: 1845,
-    description:
-      "Vattenavvisande skydd för handväskan, även på väg till kvällens planer.",
-    longDescription:
-      "The Solène är ett regnskydd för handväskor med en exklusiv känsla. Ett elegant sätt att ge väskan skydd mot regn på vägen dit och hem.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.black, colors.espresso, colors.champagne],
-    defaultColor: "black",
-    categories: ["evening", "signature"],
-    image: images.bags.solene,
-    hoverImage: images.bags.soleneAlt,
-    gallery: [images.bags.solene, images.bags.soleneAlt, images.eveningEdit.src, images.bags.noemie],
-    badge: "Bästsäljare",
-  },
-  {
-    slug: "the-adele",
-    name: "The Adèle",
-    price: 1545,
-    description:
-      "Ett stilrent skydd för din handväska när regnet kommer.",
-    longDescription:
-      "The Adèle är ett vattenavvisande väsköverdrag. Ett funktionellt tillägg till handväskan du redan tycker om, med en elegant känsla.",
-    details: [
-      "Vattenavvisande skydd för handväskor",
-      "Bärs över handväskan",
-      "Utformat för att hjälpa till att skydda mot regn",
-      "Kontakta RAINÉE UF om du är osäker på passformen för din väska.",
-    ],
-    materials:
-      "Kontakta RAINÉE UF för information om material och skötsel.",
-    colors: [colors.ivory, colors.espresso, colors.black],
-    defaultColor: "ivory",
-    categories: ["clutches", "evening"],
-    image: images.bags.adele,
-    hoverImage: images.bags.adeleAlt,
-    gallery: [images.bags.adele, images.bags.adeleAlt, images.mood[4].src, images.bags.celeste],
   },
 ];
 

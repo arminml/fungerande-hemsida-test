@@ -249,8 +249,8 @@ export default function OurStoryPage() {
           </Reveal>
           <Reveal delay={0.08} className="relative aspect-[3/4] overflow-hidden bg-stone lg:col-span-4 lg:col-start-9">
             <Image
-              src={img.textile.src}
-              alt={img.textile.alt}
+              src="/aestheticbilder/v%C3%A4ska.jpg"
+              alt="Väska"
               fill
               quality={90}
               sizes="(max-width: 1024px) 100vw, 35vw"
@@ -264,8 +264,8 @@ export default function OurStoryPage() {
         <div className="page-pad mx-auto grid max-w-site items-center gap-12 lg:grid-cols-12">
           <Reveal className="relative aspect-[4/5] overflow-hidden bg-ivory lg:col-span-5">
             <Image
-              src={img.craft.src}
-              alt={img.craft.alt}
+              src="/aestheticbilder/bild_24.jpeg"
+              alt="Bild"
               fill
               quality={90}
               sizes="(max-width: 1024px) 100vw, 40vw"
@@ -333,12 +333,12 @@ export default function OurStoryPage() {
           </Reveal>
           <Reveal delay={0.08} className="relative aspect-[16/10] overflow-hidden bg-stone lg:col-span-5 lg:col-start-8">
             <Image
-              src={img.material.src}
-              alt={img.material.alt}
+              src="/aestheticbilder/b%C3%A5da.jpg"
+              alt="Båda"
               fill
               quality={90}
               sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
+              className="object-cover object-top"
             />
           </Reveal>
         </div>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Search, ShoppingBag, User, X } from "lucide-react";
+import { Menu, Search, User, X } from "lucide-react";
 import { useCart } from "@/components/providers/CartProvider";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -100,7 +100,7 @@ export function MobileNav({
 }
 
 export function HeaderActions() {
-  const { count, setCartOpen, setSearchOpen } = useCart();
+  const { setSearchOpen } = useCart();
 
   return (
     <div className="flex items-center justify-end gap-1 sm:gap-2">
@@ -127,15 +127,6 @@ export function HeaderActions() {
       >
         <User className="h-4 w-4" />
       </Link>
-      <button
-        type="button"
-        className="inline-flex h-10 items-center gap-2 px-1 focus-ring"
-        aria-label={`Varukorg, ${count} varor`}
-        onClick={() => setCartOpen(true)}
-      >
-        <ShoppingBag className="h-4 w-4" />
-        <span className="text-[11px] tracking-nav">({count})</span>
-      </button>
     </div>
   );
 }
