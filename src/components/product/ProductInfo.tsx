@@ -1,17 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { toast } from "sonner";
 import { type Product } from "@/data/products";
 import { formatSek } from "@/lib/utils";
 import { ColorSelector } from "@/components/product/ColorSelector";
 import { QuantitySelector } from "@/components/commerce/QuantitySelector";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/components/providers/CartProvider";
 
 export function ProductInfo({ product }: { product: Product }) {
-  const { addItem } = useCart();
   const [color, setColor] = useState(product.defaultColor);
   const [quantity, setQuantity] = useState(1);
 
@@ -38,15 +35,7 @@ export function ProductInfo({ product }: { product: Product }) {
       )}
 
       <div className="mt-8 flex flex-col gap-3">
-        <Button
-          className="w-full"
-          onClick={() => {
-            addItem(product.slug, color, quantity);
-            toast("Redo för kassan", { description: "Platshållare för kassa." });
-          }}
-        >
-          Köp nu
-        </Button>
+        <Button className="w-full">Köp nu</Button>
       </div>
 
       <Accordion type="single" collapsible className="mt-10">

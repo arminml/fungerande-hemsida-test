@@ -2,17 +2,14 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { toast } from "sonner";
 import { getProduct } from "@/data/products";
 import { formatSek } from "@/lib/utils";
 import { ColorSelector } from "@/components/product/ColorSelector";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/components/providers/CartProvider";
 
 export function SignatureProduct() {
   const product = getProduct("the-amelie");
-  const { addItem } = useCart();
   const [color, setColor] = useState(product?.defaultColor ?? "espresso");
 
   if (!product) return null;
@@ -33,15 +30,7 @@ export function SignatureProduct() {
             <ColorSelector colors={product.colors} value={color} onChange={setColor} />
           </div>
         )}
-        <Button
-          className="mt-8"
-          onClick={() => {
-            addItem(product.slug, color);
-            toast("Tillagd i varukorgen", { description: product.name });
-          }}
-        >
-          Lägg i varukorgen
-        </Button>
+        <Button className="mt-8">Lägg i varukorgen</Button>
         <Accordion type="single" collapsible className="mt-10 max-w-md">
           <AccordionItem value="details">
             <AccordionTrigger>Detaljer</AccordionTrigger>

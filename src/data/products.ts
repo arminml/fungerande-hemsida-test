@@ -116,8 +116,8 @@ export const products: Product[] = [
     defaultColor: "black",
     categories: ["clutches", "evening", "signature"],
     image: "/produktbilder/la%20Normale%20marron.jpg",
-    hoverImage: images.bags.eloiseAlt,
-    gallery: ["/produktbilder/la%20Normale%20marron.jpg", images.bags.eloiseAlt, images.mood[6].src],
+    hoverImage: "/produktbilder/IMG_9298.jpeg",
+    gallery: ["/produktbilder/la%20Normale%20marron.jpg", "/produktbilder/IMG_9298.jpeg", "/produktbilder/IMG_9300.jpeg"],
   },
   {
     slug: "la-petite-marron",
@@ -144,8 +144,8 @@ export const products: Product[] = [
     defaultColor: "espresso",
     categories: ["clutches", "evening", "new"],
     image: "/produktbilder/la%20petite%20marron.jpg",
-    hoverImage: images.bags.margauxAlt,
-    gallery: ["/produktbilder/la%20petite%20marron.jpg", images.bags.margauxAlt, images.mood[3].src],
+    hoverImage: "/produktbilder/IMG_9302.jpeg",
+    gallery: ["/produktbilder/la%20petite%20marron.jpg", "/produktbilder/IMG_9302.jpeg", "/produktbilder/IMG_9296.jpeg"],
     badge: "Nyhet",
   },
 ];

@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { toast } from "sonner";
 import { type Product } from "@/data/products";
 import { formatSek, cn } from "@/lib/utils";
-import { useCart } from "@/components/providers/CartProvider";
 
 export function ProductCard({
   product,
@@ -14,8 +12,6 @@ export function ProductCard({
   product: Product;
   className?: string;
 }) {
-  const { addItem } = useCart();
-
   return (
     <article className={cn("group min-w-0", className)}>
       <div className="relative aspect-[3/4] overflow-hidden bg-stone">
@@ -44,10 +40,6 @@ export function ProductCard({
         <button
           type="button"
           className="absolute inset-x-4 bottom-4 z-10 bg-ivory/95 py-2.5 text-[10px] uppercase tracking-label text-espresso opacity-0 transition-opacity duration-300 focus-ring group-hover:opacity-100 max-md:opacity-100"
-          onClick={() => {
-            addItem(product.slug, product.defaultColor);
-            toast("Tillagd i varukorgen", { description: product.name });
-          }}
         >
           Snabbköp
         </button>
