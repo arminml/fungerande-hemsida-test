@@ -6,7 +6,6 @@ import { BrandPhilosophy } from "@/components/home/BrandPhilosophy";
 import { EditorialGrid } from "@/components/home/EditorialGrid";
 import { SignatureProduct } from "@/components/home/SignatureProduct";
 import { Press } from "@/components/home/Press";
-import { Newsletter } from "@/components/home/Newsletter";
 
 export default function HomePage() {
   return (
@@ -19,7 +18,6 @@ export default function HomePage() {
       <EditorialGrid />
       <SignatureProduct />
       <Press />
-      <Newsletter />
     </>
   );
 }
