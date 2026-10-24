@@ -12,7 +12,7 @@ export function EditorialGrid() {
           <div className="mb-10 flex items-end justify-between">
             <div>
               <p className="label">RAINÉES värld</p>
-              <p className="mt-2 font-serif text-3xl italic">Paris, 22:14</p>
+              <p className="mt-2 font-serif text-3xl italic">Göteborg, 22:14</p>
             </div>
             <p className="hidden text-[10px] uppercase tracking-label text-mute sm:block">
               Kollektion 01 · Stämning
@@ -22,7 +22,7 @@ export function EditorialGrid() {
 
         <div className="grid grid-cols-6 gap-2 md:gap-3">
           <figure className="relative col-span-6 aspect-[16/10] overflow-hidden md:col-span-4 md:row-span-2 md:aspect-auto md:min-h-[520px]">
-            <Image src={a.src} alt={a.alt} fill className="object-cover" sizes="70vw" />
+            <Image src="/aestheticbilder/g%C3%B6teborgbil.jpeg" alt="Göteborg" fill className="object-cover" sizes="70vw" />
             <figcaption className="absolute bottom-3 left-3 text-[10px] uppercase tracking-label text-ivory">
               {a.caption}
             </figcaption>

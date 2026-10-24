@@ -91,7 +91,7 @@ export function MobileNav({
                 {item.label}
               </Link>
             ))}
-            <p className="label mt-8">RAINÉE / Paris edit</p>
+            <p className="label mt-8">RAINÉE / Göteborg edit</p>
           </nav>
         </SheetContent>
       </Sheet>
