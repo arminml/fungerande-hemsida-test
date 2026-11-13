@@ -35,7 +35,16 @@ export function ProductInfo({ product }: { product: Product }) {
       )}
 
       <div className="mt-8 flex flex-col gap-3">
-        <Button className="w-full">Köp nu</Button>
+        {product.buyUrl ? (
+          <a
+            href={product.buyUrl}
+            className="group inline-flex w-full items-center justify-center gap-3 bg-espresso px-7 py-3.5 text-[11px] uppercase tracking-label text-ivory transition-colors duration-300 hover:bg-ink focus-ring"
+          >
+            Köp nu
+          </a>
+        ) : (
+          <Button className="w-full">Köp nu</Button>
+        )}
       </div>
 
       <Accordion type="single" collapsible className="mt-10">

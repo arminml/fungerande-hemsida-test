@@ -24,6 +24,7 @@ export type Product = {
   gallery: string[];
   badge?: "Nyhet" | "Bästsäljare";
   hideOptions?: boolean;
+  buyUrl?: string;
 };
 
 export const colors: Record<string, ProductColor> = {
@@ -53,6 +54,7 @@ export const products: Product[] = [
       "*Måtten kan variera beroende på modell/form på din väska*",
     ],
     hideOptions: true,
+    buyUrl: "https://w166200.shop.abicart.se/sv/la-normale-noire.html",
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.ivory, colors.black],
@@ -82,6 +84,7 @@ export const products: Product[] = [
       "*Måtten kan variera beroende på modell/form på din väska*",
     ],
     hideOptions: true,
+    buyUrl: "https://w166200.shop.abicart.se/sv/la-petite-noire.html",
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.ivory, colors.espresso, colors.champagne],
@@ -110,6 +113,7 @@ export const products: Product[] = [
       "*Måtten kan variera beroende på modell/form på din väska*",
     ],
     hideOptions: true,
+    buyUrl: "https://w166200.shop.abicart.se/sv/la-normale-marron.html",
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.black, colors.espresso, colors.ivory],
@@ -138,6 +142,7 @@ export const products: Product[] = [
       "*Måtten kan variera beroende på modell/form på din väska*",
     ],
     hideOptions: true,
+    buyUrl: "https://w166200.shop.abicart.se/sv/la-petite-marron.html",
     materials:
       "Kontakta RAINÉE UF för information om material och skötsel.",
     colors: [colors.espresso, colors.black, colors.champagne],

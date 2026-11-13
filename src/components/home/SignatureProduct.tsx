@@ -30,7 +30,16 @@ export function SignatureProduct() {
             <ColorSelector colors={product.colors} value={color} onChange={setColor} />
           </div>
         )}
-        <Button className="mt-8">Lägg i varukorgen</Button>
+        {product.buyUrl ? (
+          <a
+            href={product.buyUrl}
+            className="group mt-8 inline-flex items-center justify-center gap-3 bg-espresso px-7 py-3.5 text-[11px] uppercase tracking-label text-ivory transition-colors duration-300 hover:bg-ink focus-ring"
+          >
+            Lägg i varukorgen
+          </a>
+        ) : (
+          <Button className="mt-8">Lägg i varukorgen</Button>
+        )}
         <Accordion type="single" collapsible className="mt-10 max-w-md">
           <AccordionItem value="details">
             <AccordionTrigger>Detaljer</AccordionTrigger>
