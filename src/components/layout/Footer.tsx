@@ -22,18 +22,20 @@ const columns = [
   {
     title: "Kundservice",
     links: [
-      { href: "/shop", label: "Frakt & returer" },
-      { href: "/shop", label: "Vanliga frågor" },
-      { href: "/our-story", label: "Skötselguide" },
-      { href: "/shop", label: "Villkor" },
-      { href: "/shop", label: "Integritet" },
+      { href: "/kopvillkor", label: "Köpvillkor" },
+      { href: "/kopvillkor#foretagsinformation", label: "Företagsinformation" },
+      { href: "/kopvillkor#priser-och-betalning", label: "Priser och betalning" },
+      { href: "/kopvillkor#leverans", label: "Leverans" },
+      { href: "/kopvillkor#angerratt-och-returer", label: "Ångerrätt och returer" },
+      { href: "/kopvillkor#reklamation", label: "Reklamation" },
+      { href: "/kopvillkor#personuppgifter", label: "Personuppgifter" },
+      { href: "/kopvillkor#tvister-och-kontakt", label: "Tvister och kontakt" },
     ],
   },
   {
     title: "Socialt",
     links: [
       { href: "https://www.instagram.com/rainee.uf?dlrf=YjJpaTM3OGNnaHg4", label: "Instagram", newTab: true },
-      { href: "https://facebook.com", label: "Facebook", newTab: true },
       { href: "https://www.tiktok.com/@rainee.uf", label: "TikTok", newTab: true },
     ],
   },

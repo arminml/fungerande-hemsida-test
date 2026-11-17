@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { formatSek } from "@/lib/utils";
 import { ColorSelector } from "@/components/product/ColorSelector";
@@ -58,7 +59,24 @@ export function SignatureProduct() {
           <AccordionItem value="shipping">
             <AccordionTrigger>Frakt & returer</AccordionTrigger>
             <AccordionContent>
-              Fri frakt på beställningar över 1 500 SEK. Returer inom 14 dagar.
+              <div className="space-y-3">
+                <p>
+                  Frakt: Vi levererar inom Sverige med PostNord. Fraktkostnaden är 61 SEK per
+                  beställning och visas i kassan. Leveranstiden är 1–2 vardagar efter att ditt
+                  paket skickats.
+                </p>
+                <p>
+                  Returer: Du har 14 dagars ångerrätt, som börjar när du har fått varan. Meddela
+                  oss på rainee.uf@hotmail.com inom 14 dagar och skicka tillbaka varan väl
+                  förpackad och i oanvänt skick. Du står själv för returfrakten. Vi återbetalar
+                  det du har betalat, inklusive ursprunglig frakt, med Swish.
+                </p>
+                <p>
+                  <Link href="/kopvillkor" className="underline underline-offset-4">
+                    Läs alla köpvillkor
+                  </Link>
+                </p>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

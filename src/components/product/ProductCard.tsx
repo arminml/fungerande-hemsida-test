@@ -53,15 +53,6 @@ export function ProductCard({
           </h3>
           <p className="mt-1 text-[13px] text-mute">{formatSek(product.price)}</p>
         </div>
-        <div className="mt-2 flex gap-1.5" aria-hidden>
-          {product.colors.slice(0, 3).map((color) => (
-            <span
-              key={color.id}
-              className="h-2.5 w-2.5 rounded-full border border-line"
-              style={{ backgroundColor: color.hex }}
-            />
-          ))}
-        </div>
       </div>
     </article>
   );
